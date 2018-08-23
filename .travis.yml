@@ -1,11 +1,50 @@
+#language: android
+#sudo: false
+#jdk: oraclejdk8
+#before_install:
+#- chmod +x gradlew
+#- mkdir "$ANDROID_HOME/licenses" || true
+#- ./gradlew dependencies || true
+#- echo yes | sdkmanager "platforms;android-25" #"build-tools;28.0.0"
+#android:
+#  components:
+#  - tools
+#  - platform-tools
+#  - build-tools-25.0.2
+#  - android-25
+#  - extra-android-m2repository
+#  - extra-google-google_play_services
+#  - extra-google-m2repository
+#licenses:
+#- android-sdk-preview-license-.+
+#- android-sdk-license-.+
+#- google-gdk-license-.+
+#notifications:
+#  email: false
+#env:
+#- GRADLE_OPTS="-Xmx2048M -XX:MaxPermSize=2048m"
+#branches:
+#  only:
+#    - master
+#    - /dev/.*/
+#script:
+#- ./gradlew build --stacktrace
+#cache:
+#  directories:
+#  - $HOME/.gradle/caches/
+#  - $HOME/.gradle/wrapper/
+#  - $HOME/.android/build-cache
+#deploy:
+#  key:
+#    secure: hEfLVu/TsFnkmgVTrXlFa+3drqO7eY4eQUvY4M6UwQxa8m5PyWMMjgNcSaiP9ZhXhsYOfLG2HrLaHEsnuAV+Ect/du04VPnKnIoBWrLU3C7agwKmCRl+BaTfpn5iT5Rxa7F9rRB7mbcQaeY/4YzwUtYcoh/st1sgsF9MeKjFfL0arwfcp+O7WAzSNfiTXJdSlPyN/U8ryI7ZS8j6oId2HDcXwk+0Pnw65c6xfZ/3Uu30qaG3UnJhzpZbECk2d4wRmCaZrbkCfmOU5iR5dAhp+vzTP88G78KI89sTpV9Wh1b61le40jCWtxZTAD3YRAlCDoir1ElafoGVSfGOpuT8bPpClwAF0UvybiWh7FGRpm5568d2uctQdibbduxkBbRS7kBZm/EWj9ckVPSpCCbg23iJ1zgTQWTtDNdP8VhqQI4OVfeVT2CkJq4jMuqHoS9HLq6hSbiQbLoUMmN7dg473siJZ09xHXasPd6/OmN5q2K4ASDaGhpBvmGBOLKVtRW7TwV6jaZmQbApHxxfPNrI16cPwqMyLuMQKIKaUubmL9RCZQWhM9gHdmsu0dLvnoHb9s8YALbtJ9teVwKT/lyd+En0qWAmvcgM7KnW7y5iNU/oLeJhumzqWLFjhupqrADJrUhjP4/W1OQkHmK2/SQoXdSPbwaRAlyNgQ5kHXlZak4=
+
+
 language: android
 sudo: false
 jdk: oraclejdk8
 before_install:
-- chmod +x gradlew
 - mkdir "$ANDROID_HOME/licenses" || true
-- ./gradlew dependencies || true
-- echo yes | sdkmanager "platforms;android-25" #"build-tools;28.0.0"
+- yes | sdkmanager "platforms;android-25"
 android:
   components:
   - tools
@@ -23,10 +62,6 @@ notifications:
   email: false
 env:
 - GRADLE_OPTS="-Xmx2048M -XX:MaxPermSize=2048m"
-branches:
-  only:
-    - master
-    - /dev/.*/
 script:
 - ./gradlew build --stacktrace
 cache:
@@ -34,6 +69,3 @@ cache:
   - $HOME/.gradle/caches/
   - $HOME/.gradle/wrapper/
   - $HOME/.android/build-cache
-#deploy:
-#  key:
-#    secure: hEfLVu/TsFnkmgVTrXlFa+3drqO7eY4eQUvY4M6UwQxa8m5PyWMMjgNcSaiP9ZhXhsYOfLG2HrLaHEsnuAV+Ect/du04VPnKnIoBWrLU3C7agwKmCRl+BaTfpn5iT5Rxa7F9rRB7mbcQaeY/4YzwUtYcoh/st1sgsF9MeKjFfL0arwfcp+O7WAzSNfiTXJdSlPyN/U8ryI7ZS8j6oId2HDcXwk+0Pnw65c6xfZ/3Uu30qaG3UnJhzpZbECk2d4wRmCaZrbkCfmOU5iR5dAhp+vzTP88G78KI89sTpV9Wh1b61le40jCWtxZTAD3YRAlCDoir1ElafoGVSfGOpuT8bPpClwAF0UvybiWh7FGRpm5568d2uctQdibbduxkBbRS7kBZm/EWj9ckVPSpCCbg23iJ1zgTQWTtDNdP8VhqQI4OVfeVT2CkJq4jMuqHoS9HLq6hSbiQbLoUMmN7dg473siJZ09xHXasPd6/OmN5q2K4ASDaGhpBvmGBOLKVtRW7TwV6jaZmQbApHxxfPNrI16cPwqMyLuMQKIKaUubmL9RCZQWhM9gHdmsu0dLvnoHb9s8YALbtJ9teVwKT/lyd+En0qWAmvcgM7KnW7y5iNU/oLeJhumzqWLFjhupqrADJrUhjP4/W1OQkHmK2/SQoXdSPbwaRAlyNgQ5kHXlZak4=

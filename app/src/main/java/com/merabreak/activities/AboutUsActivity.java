@@ -34,7 +34,7 @@ public class AboutUsActivity extends BaseActivity implements MeraBreakWebViewCli
 
     @ViewById(R.id.progress)
     LinearLayout progress;
-
+    // some text
    /* @ViewById(R.id.about_fb)
     TextView about_fb;
 */

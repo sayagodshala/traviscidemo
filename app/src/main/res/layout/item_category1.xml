@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:clickable="false"
+    android:focusable="false">
+
+    <Button
+        android:id="@+id/check1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_white"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="Category"
+        android:textAllCaps="false"
+        android:textColor="@color/p1"
+        android:textSize="13sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        />
+
+</RelativeLayout>
+
+
+
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/check2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_white"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Category"
+            android:textAllCaps="false"
+            android:textColor="@color/p1"
+            android:textSize="13sp"
+            android:clickable="true"/>
+    </RelativeLayout>
+    -->

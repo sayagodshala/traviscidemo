@@ -1,0 +1,1309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_new"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginBottom="15dp"
+            app:expandedTitleMarginEnd="100dp"
+            app:expandedTitleMarginStart="5dp"
+            app:expandedTitleTextAppearance="@style/ExpandedBar"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax">
+
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dummy_profile_image"
+                    app:layout_collapseMode="parallax" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@color/black_fade"
+                    android:fitsSystemWindows="true"
+                    android:visibility="gone"
+                    app:layout_collapseMode="parallax" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/black_transparent"
+                    android:orientation="vertical"
+                    android:paddingTop="7dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        app:layout_collapseMode="parallax">
+
+                        <TextView
+                            android:id="@+id/rank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="5dp"
+                            android:maxLines="1"
+                            android:text="Bronze"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/transparent_toolbar" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/selector_arc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_white_rounded"
+                android:padding="15dp"
+                android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/progress_arc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="5dp">
+
+                <com.merabreak.ArcView
+                    android:id="@+id/arc_progress"
+                    android:layout_width="82dp"
+                    android:layout_height="82dp" />
+
+                <ImageView
+                    android:id="@+id/arc_one_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/profile_challenge_icon"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="23dp"
+                    android:layout_marginTop="22dp"/>
+
+                <TextView
+                    android:id="@+id/arc_one_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200"
+                    android:textSize="16sp"
+                    android:textColor="#2c2f38"
+                    android:layout_marginTop="-18dp"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/arc_one_icon"/>
+
+                <TextView
+                    android:id="@+id/cha_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/arc_progress"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="@string/profile_challenges"
+                    android:textColor="@color/progress_title"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/cha_tot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cha_text"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:text="Total 200"
+                    android:textColor="@color/grey5"
+                    android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/progress_arc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_below="@+id/progress_arc1">
+
+                    <com.merabreak.ArcViewOne
+                        android:id="@+id/arc_progress_one"
+                        android:layout_width="82dp"
+                        android:layout_height="82dp" />
+
+                    <ImageView
+                        android:id="@+id/arc_two_icon"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/profile_refferal_icon"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:layout_marginBottom="23dp"
+                        android:layout_marginTop="22dp"/>
+
+                    <TextView
+                        android:id="@+id/arc_two_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="200"
+                        android:textSize="16sp"
+                        android:textColor="#2c2f38"
+                        android:layout_marginTop="-18dp"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/arc_two_icon"/>
+
+                    <TextView
+                        android:id="@+id/cha_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/arc_progress_one"
+                        android:layout_marginLeft="12dp"
+                        android:gravity="center"
+                        android:text="@string/profile_refferals"
+                        android:textColor="@color/progress_title"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/ref_tot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cha_text1"
+                        android:layout_marginLeft="16dp"
+                        android:gravity="center"
+                        android:text="Total 200"
+                        android:textColor="@color/grey5"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/progress_arc3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="5dp"
+                    android:layout_alignParentRight="true">
+
+                    <com.merabreak.ArcViewTwo
+                        android:id="@+id/arc_progress_two"
+                        android:layout_width="82dp"
+                        android:layout_height="82dp" />
+
+                    <ImageView
+                        android:id="@+id/arc_three_icon"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/profile_points_icon"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:layout_marginBottom="23dp"
+                        android:layout_marginTop="22dp"/>
+
+
+                    <TextView
+                        android:id="@+id/arc_three_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="200"
+                        android:textSize="16sp"
+                        android:textColor="#2c2f38"
+                        android:layout_marginTop="-18dp"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/arc_three_icon"/>
+
+                    <TextView
+                        android:id="@+id/cha_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/arc_progress_two"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="@string/profile_points"
+                        android:textColor="@color/progress_title"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/poi_tot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cha_text2"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:text="Total 200"
+                        android:textColor="@color/grey5"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/progress_arc4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/progress_arc3">
+
+                    <com.merabreak.ArcViewThree
+                        android:id="@+id/arc_progress_three"
+                        android:layout_width="82dp"
+                        android:layout_height="82dp" />
+
+                    <ImageView
+                        android:id="@+id/arc_four_icon"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/profile_raffle_icon"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:layout_marginBottom="23dp"
+                        android:layout_marginTop="22dp"/>
+
+                    <TextView
+                        android:id="@+id/arc_four_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="200"
+                        android:textSize="16sp"
+                        android:textColor="#2c2f38"
+                        android:layout_marginTop="-18dp"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/arc_four_icon"/>
+
+                    <TextView
+                        android:id="@+id/cha_text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/arc_progress_three"
+                        android:layout_marginLeft="18dp"
+                        android:gravity="center"
+                        android:text="@string/profile_raffels"
+                        android:textColor="@color/progress_title"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/raff_tot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cha_text3"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:text="Total 200"
+                        android:textColor="@color/grey5"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/selector1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_white_rounded"
+                android:padding="15dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/progress1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:id="@+id/circularProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="-20dp"
+                        android:layout_marginTop="-30dp"
+                        android:background="@drawable/circle_shape"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progressDrawable="@drawable/circular_one"
+                        android:secondaryProgress="100" />
+
+                    <TextView
+                        android:id="@+id/tv"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="-20dp"
+                        android:layout_marginTop="-30dp"
+                        android:gravity="center"
+                        android:text="25"
+                        android:textColor="@color/app_black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cha_text_old"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/circularProgressbar"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="-40dp"
+                        android:gravity="center"
+                        android:text="Challenges"
+                        android:textColor="@color/selected_tab_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/cha_tot_old"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cha_text_old"
+                        android:layout_marginLeft="28dp"
+                        android:gravity="center"
+                        android:text="Total 200"
+                        android:textColor="@color/grey5"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/progress2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/progress1">
+
+                    <ProgressBar
+                        android:id="@+id/circularProgressbar1"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="-20dp"
+                        android:layout_marginTop="-30dp"
+                        android:background="@drawable/circle_shape"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progressDrawable="@drawable/circular_two"
+                        android:secondaryProgress="100" />
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="-20dp"
+                        android:layout_marginTop="-30dp"
+                        android:gravity="center"
+                        android:text="25"
+                        android:textColor="@color/app_black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cha_text1_old"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/circularProgressbar1"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="-40dp"
+                        android:gravity="center"
+                        android:text="Refferals"
+                        android:textColor="@color/selected_tab_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/ref_tot_old"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cha_text1_old"
+                        android:layout_marginLeft="28dp"
+                        android:gravity="center"
+                        android:text="Total 00"
+                        android:textColor="@color/grey5"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/progress3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true">
+
+                    <ProgressBar
+                        android:id="@+id/circularProgressbar2"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="-20dp"
+                        android:layout_marginTop="-30dp"
+                        android:background="@drawable/circle_shape"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progressDrawable="@drawable/circular_three"
+                        android:secondaryProgress="100" />
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="-20dp"
+                        android:layout_marginTop="-30dp"
+                        android:gravity="center"
+                        android:text="25"
+                        android:textColor="@color/app_black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cha_text2_old"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/circularProgressbar2"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="-40dp"
+                        android:gravity="center"
+                        android:text="Points Won"
+                        android:textColor="@color/selected_tab_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/poi_tot_old"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cha_text2_old"
+                        android:layout_marginLeft="50dp"
+                        android:gravity="center"
+                        android:text="Total 100k"
+                        android:textColor="@color/grey5"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/progress4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/progress3">
+
+                    <ProgressBar
+                        android:id="@+id/circularProgressbar3"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="-20dp"
+                        android:layout_marginTop="-30dp"
+                        android:background="@drawable/circle_shape"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progressDrawable="@drawable/circular_four"
+                        android:secondaryProgress="100" />
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="-20dp"
+                        android:layout_marginTop="-30dp"
+                        android:gravity="center"
+                        android:text="25"
+                        android:textColor="@color/app_black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cha_text3_old"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/circularProgressbar3"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="-40dp"
+                        android:gravity="center"
+                        android:text="Raffles"
+                        android:textColor="@color/selected_tab_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/raff_tot_old"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cha_text3_old"
+                        android:layout_marginLeft="50dp"
+                        android:gravity="center"
+                        android:text="Total 20"
+                        android:textColor="@color/grey5"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_white_rounded"
+                android:padding="15dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/selector11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/current_rank"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:text="Bronze"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <SeekBar
+                        android:id="@+id/seekbar_rank"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:max="100"
+                        android:theme="@style/SeekbarBronze" />
+
+
+                    <TextView
+                        android:id="@+id/target_rank"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="Silver"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/selector111"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/selector11"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/challanges"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="Challenges"
+                        android:textColor="@color/primary_color"
+                        android:textSize="17sp" />
+
+                    <SeekBar
+                        android:id="@+id/seekbar_challanges"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:theme="@style/SeekbarChallanges" />
+
+
+                    <TextView
+                        android:id="@+id/target_challenges"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:text=""
+                        android:textColor="@color/primary_color"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/won"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/selector111"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/coin_won"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="Point Won"
+                        android:textColor="@color/app_red"
+                        android:textSize="17sp" />
+
+                    <SeekBar
+                        android:id="@+id/seekbar_coin_won"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:theme="@style/SeekbarCoinWons" />
+
+
+                    <TextView
+                        android:id="@+id/target_coins"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:text=""
+                        android:textColor="@color/app_red"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rl_referrals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/won"
+                    android:layout_marginTop="10dp"
+                    android:descendantFocusability="blocksDescendants"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/referrals"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="Referrals"
+                        android:textColor="@color/app_blue"
+                        android:textSize="17sp" />
+
+                    <SeekBar
+                        android:id="@+id/seekbar_referrals"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+
+                        android:max="100"
+                        android:theme="@style/SeekbarReferrals" />
+
+                    <TextView
+                        android:id="@+id/target_referrals"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:textColor="@color/app_blue"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_referrals"
+                    android:layout_marginTop="10dp"
+                    android:descendantFocusability="blocksDescendants"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/raffles"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:text="Raffles"
+                        android:textColor="@color/app_green"
+                        android:textSize="17sp" />
+
+                    <SeekBar
+                        android:id="@+id/seekbar_raffles"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:max="100"
+                        android:theme="@style/SeekbarRaffles" />
+
+                    <TextView
+                        android:id="@+id/target_raffles"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:textColor="@color/app_green"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/user_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/selector_arc1"
+                android:layout_marginTop="15dp"
+                android:text="@string/profile_about_text"
+                android:textColor="@color/selected_tab_color"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/user_details_view"
+                android:layout_width="120dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/user_details"
+                android:background="@color/primary_color" />
+
+            <LinearLayout
+                android:id="@+id/user_details_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/user_details_view"
+                android:background="@drawable/button_white_rounded_new"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/user_mobile_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile_mobile_text"
+                        android:textColor="@color/grey4"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/user_mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="9581325595"
+                        android:textColor="@color/selected_tab_color"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/grey1" />
+
+                <RelativeLayout
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/user_email_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/profile_email_text"
+                        android:textColor="@color/grey4"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/user_email"
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:gravity="end"
+                        android:layout_toRightOf="@id/user_email_label"
+                        android:text="vinayass@gmail.com"
+                        android:textColor="@color/selected_tab_color"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/email_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/grey1" />
+
+                <RelativeLayout
+                    android:id="@+id/dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/user_dob_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile_dob_text"
+                        android:textColor="@color/grey4"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/user_dob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text=""
+                        android:textColor="@color/selected_tab_color"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/dob_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/grey1" />
+
+                <RelativeLayout
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/user_gender_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile_gender_text"
+                        android:textColor="@color/grey4"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/user_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/selected_tab_color"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/gender_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/grey1" />
+
+                <RelativeLayout
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/user_location_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/profile_location_text"
+                        android:textColor="@color/grey4"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/user_location"
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:gravity="end"
+                        android:layout_toRightOf="@id/user_location_label"
+                        android:text=""
+                        android:textColor="@color/selected_tab_color"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/location_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/grey1" />
+
+                <RelativeLayout
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/user_city_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile_city_text"
+                        android:textColor="@color/grey4"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/user_city"
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:gravity="end"
+                        android:layout_toRightOf="@id/user_city_label"
+                        android:text=""
+                        android:textColor="@color/selected_tab_color"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/city_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/grey1" />
+
+                <RelativeLayout
+                    android:id="@+id/zipcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/user_zip_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile_zip_text"
+                        android:textColor="@color/grey4"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/user_zipcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/selected_tab_color"
+                        android:textSize="15sp" /><!-- android:text="524323" -->
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/zip_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/grey1" />
+
+                <RelativeLayout
+                    android:id="@+id/about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/user_about_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile_about_text"
+                        android:textColor="@color/grey4"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/user_about"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="3"
+                        android:layout_below="@+id/user_about_label"
+                        android:text="Nellore, Andhra Pradesh, India"
+                        android:textColor="@color/selected_tab_color"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_account_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/user_details_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/profile_account_text"
+                android:textColor="@color/selected_tab_color"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/ac_view"
+                android:layout_width="160dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/tv_account_history"
+                android:background="@color/primary_color" />
+
+            <TextView
+                android:id="@+id/show_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/user_details_content"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:text="@string/profile_account_more"
+                android:textColor="@color/selected_tab_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/show_more_view"
+                android:layout_width="160dp"
+                android:layout_height="2dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="2dp"
+                android:visibility="gone"
+                android:layout_below="@+id/show_more"
+                android:background="@color/primary_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/ac_view"
+                android:background="@drawable/button_white_rounded_new"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/tot_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tot_points_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile_total_points"
+                        android:textColor="@color/grey4"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tot_points_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/tot_points_text"
+                        android:text="40K"
+                        android:textColor="@color/selected_tab_color"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/grey1" />
+
+                <RelativeLayout
+                    android:id="@+id/tot_challenges"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tot_chall_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile_total_challenges"
+                        android:textColor="@color/grey4"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tot_chall_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/tot_chall_text"
+                        android:text="200"
+                        android:textColor="@color/selected_tab_color"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/grey1" />
+
+                <RelativeLayout
+                    android:id="@+id/tot_raffles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tot_raffles_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile_total_raffels"
+                        android:textColor="@color/grey4"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tot_raffles_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/tot_raffles_text"
+                        android:text="40"
+                        android:textColor="@color/selected_tab_color"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/grey1" />
+
+                <RelativeLayout
+                    android:id="@+id/tot_orders"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tot_orders_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile_total_orders"
+                        android:textColor="@color/grey4"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tot_orders_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/tot_orders_text"
+                        android:text="0"
+                        android:textColor="@color/selected_tab_color"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    android:background="@color/grey1" />
+
+                <RelativeLayout
+                    android:id="@+id/tot_deals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="gone"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tot_deals_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile_total_deals"
+                        android:textColor="@color/grey4"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tot_deals_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/tot_deals_text"
+                        android:text="15"
+                        android:textColor="@color/selected_tab_color"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/edit"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="@dimen/fab_margin"-->
+    <!--android:clickable="true"-->
+    <!--android:src="@drawable/ic_edit"-->
+    <!--app:layout_anchor="@id/appbar"-->
+    <!--app:layout_anchorGravity="bottom|right|end" />-->
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+

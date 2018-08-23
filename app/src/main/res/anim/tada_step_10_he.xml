@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <scale android:duration="50" android:pivotX="50%" android:pivotY="50%" android:fillBefore="true" android:fillAfter="false" android:startOffset="0" android:fromXScale="1.0" android:toXScale="0.98" android:fromYScale="1.0" android:toYScale="0.98" android:fillEnabled="true" />
+    <rotate android:duration="50" android:toDegrees="-3.0" android:pivotX="50%" android:pivotY="50%" android:fillBefore="true" android:fillAfter="false" android:startOffset="0" android:fillEnabled="true" />
+    <scale android:duration="50" android:pivotX="50%" android:pivotY="50%" android:fillBefore="true" android:fillAfter="false" android:startOffset="50" android:fromXScale="0.98" android:toXScale="0.98" android:fromYScale="0.98" android:toYScale="0.98" android:fillEnabled="true" />
+    <rotate android:duration="50" android:fromDegrees="-3.0" android:toDegrees="-3.0" android:pivotX="50%" android:pivotY="50%" android:fillBefore="true" android:fillAfter="false" android:startOffset="50" android:fillEnabled="true" />
+    <scale android:duration="50" android:pivotX="50%" android:pivotY="50%" android:fillBefore="true" android:fillAfter="true" android:startOffset="100" android:fromXScale="0.98" android:toXScale="1.02" android:fromYScale="0.98" android:toYScale="1.02" android:fillEnabled="true" />
+    <rotate android:duration="50" android:toDegrees="3.0" android:pivotX="50%" android:pivotY="50%" android:fillBefore="true" android:fillAfter="false" android:startOffset="100" android:fillEnabled="true" />
+    <rotate android:duration="50" android:toDegrees="-3.0" android:pivotX="50%" android:pivotY="50%" android:fillBefore="true" android:fillAfter="false" android:startOffset="150" android:fillEnabled="true" />
+    <rotate android:duration="50" android:toDegrees="3.0" android:pivotX="50%" android:pivotY="50%" android:fillBefore="true" android:fillAfter="false" android:startOffset="200" android:fillEnabled="true" />
+    <rotate android:duration="50" android:toDegrees="-3.0" android:pivotX="50%" android:pivotY="50%" android:fillBefore="true" android:fillAfter="false" android:startOffset="250" android:fillEnabled="true" />
+    <rotate android:duration="50" android:toDegrees="3.0" android:pivotX="50%" android:pivotY="50%" android:fillBefore="true" android:fillAfter="false" android:startOffset="300" android:fillEnabled="true" />
+    <rotate android:duration="50" android:toDegrees="-3.0" android:pivotX="50%" android:pivotY="50%" android:fillBefore="true" android:fillAfter="false" android:startOffset="350" android:fillEnabled="true" />
+    <rotate android:duration="50" android:toDegrees="3.0" android:pivotX="50%" android:pivotY="50%" android:fillBefore="true" android:fillAfter="false" android:startOffset="400" android:fillEnabled="true" />
+    <scale android:duration="50" android:pivotX="50%" android:pivotY="50%" android:fillBefore="true" android:fillAfter="true" android:startOffset="450" android:fromXScale="1.02" android:toXScale="1.0" android:fromYScale="1.02" android:toYScale="1.0" android:fillEnabled="true" />
+    <rotate android:duration="50" android:toDegrees="0.0" android:pivotX="50%" android:pivotY="50%" android:fillBefore="true" android:fillAfter="false" android:startOffset="450" android:fillEnabled="true" />
+</set>

@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.SplashActivity">
+
+    <!--<item-->
+        <!--android:id="@+id/change_password"-->
+        <!--android:icon="@drawable/ic_password"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="Password"-->
+        <!--app:showAsAction="always" />-->
+
+    <item
+        android:id="@+id/edit"
+        android:icon="@drawable/edit_icon"
+        android:orderInCategory="100"
+        android:title="Edit"
+        app:showAsAction="always" />
+
+    <!--<item-->
+        <!--android:id="@+id/address"-->
+        <!--android:icon="@drawable/ic_location"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="Addresses"-->
+        <!--app:showAsAction="always" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/coins_history"-->
+        <!--android:icon="@drawable/ic_coin"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="Coins"-->
+        <!--app:showAsAction="always" />-->
+
+</menu>

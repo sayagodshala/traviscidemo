@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:id="@+id/main_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/white_rounded_new_promo_dialog">
+
+            <ImageView
+                android:id="@+id/upper_banner"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/gs_upper_banner"/>
+
+
+        <ScrollView
+            android:id="@+id/content_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/upper_banner"
+            android:scrollbars="none">
+            <LinearLayout
+                android:id="@+id/gs_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/gs_dynamic_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/gs_submit"
+                android:layout_width="160dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_blue_normal_guru"
+                android:text="Okay"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+    </LinearLayout>
+        </ScrollView>
+        <ImageView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_above="@+id/gs_bottom_banner"
+            android:visibility="visible"
+            android:background="#090026"/>
+        <ImageView
+            android:id="@+id/gs_bottom_banner"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible"
+            android:background="@drawable/gs_default_banner"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/mcl_guru_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/gs_kundli" />
+
+</RelativeLayout>

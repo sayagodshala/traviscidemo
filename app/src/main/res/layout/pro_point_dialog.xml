@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/white_rounded_new_promo_dialog"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/dialog_back_pattern"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="-50dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/dialog_wallet_icon" />
+
+        <TextView
+            android:id="@+id/points_congrats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pro_points_congrats"
+            android:textStyle="bold"
+            android:textColor="#515151"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/points_congrat_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vinay Kumar"
+            android:textColor="#5f5e5e"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/points_congrat_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="#7f7f7f"
+            android:text="You have won 25,000 super points. What are you waiting for...go and redeem it"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/points_congrats_redeem"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:text="@string/pro_points_redeem"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:textSize="13sp"
+            android:textAllCaps="false"
+            android:background="@drawable/redeem_button"/>
+
+        <Button
+            android:id="@+id/points_congrats_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textSize="13sp"
+            android:layout_gravity="center"
+            android:textColor="#515151"
+            android:background="@color/white_transparent"
+            android:text="@string/pro_points_skip"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

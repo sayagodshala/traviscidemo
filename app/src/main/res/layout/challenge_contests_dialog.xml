@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/white_rounded_new_promo_dialog">
+
+        <RelativeLayout
+            android:id="@+id/daily_contest_challenge_top"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:visibility="gone"
+            android:background="@drawable/daily_challenge_banner">
+
+
+            <TextView
+                android:id="@+id/daily_contest_time_secs"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:text="50"
+                android:textSize="23sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/contest_timer_back"/>
+
+            <TextView
+                android:id="@+id/daily_contest_timer_divider"
+                android:layout_width="8dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_toLeftOf="@+id/daily_contest_time_secs"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/contest_timer_divider"/>
+
+            <TextView
+                android:id="@+id/daily_contest_time_mins"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:text="02"
+                android:textSize="23sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/daily_contest_timer_divider"
+                android:background="@drawable/contest_timer_back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MINS"
+                android:textColor="#523b00"
+                android:layout_below="@+id/daily_contest_time_mins"
+                android:layout_toLeftOf="@+id/daily_contest_timer_divider"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:textSize="9sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SECS"
+                android:layout_toRightOf="@+id/daily_contest_timer_divider"
+                android:layout_below="@+id/daily_contest_time_secs"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:textColor="#523b00"
+                android:textSize="9sp"/>
+
+            <LinearLayout
+                android:id="@+id/daily_contest_live_users"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                android:layout_below="@+id/daily_contest_time_mins"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/daily_contest_live_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/live_indicator"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:text="25.5K"/>
+
+                <View
+                    android:layout_width="1.5dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"
+                    android:background="#80A63600"/>
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/live_icon"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/weekly_contest_challenge_top"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:visibility="visible"
+            android:background="@drawable/weekly_banner">
+
+
+            <TextView
+                android:id="@+id/weekly_contest_time_secs"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:text="50"
+                android:textSize="23sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/contest_timer_back"/>
+
+            <TextView
+                android:id="@+id/weekly_contest_timer_divider"
+                android:layout_width="8dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_toLeftOf="@+id/weekly_contest_time_secs"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/contest_timer_divider"/>
+
+            <TextView
+                android:id="@+id/weekly_contest_time_mins"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:text="02"
+                android:textSize="23sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/weekly_contest_timer_divider"
+                android:background="@drawable/contest_timer_back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MINS"
+                android:textColor="#523b00"
+                android:layout_below="@+id/weekly_contest_time_mins"
+                android:layout_toLeftOf="@+id/weekly_contest_timer_divider"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:textSize="9sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SECS"
+                android:layout_toRightOf="@+id/weekly_contest_timer_divider"
+                android:layout_below="@+id/weekly_contest_time_secs"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:textColor="#523b00"
+                android:textSize="9sp"/>
+
+            <LinearLayout
+                android:id="@+id/weekly_contest_live_users"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="12dp"
+                android:visibility="visible"
+                android:layout_below="@+id/weekly_contest_time_mins"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/weekly_contest_live_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/live_indicator"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:text="25K"/>
+
+                <View
+                    android:layout_width="1.5dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"
+                    android:background="#80A63600"/>
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/live_icon"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/contest_challenge_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textSize="12sp"
+            android:textColor="#363f54"
+            android:text="ddaadasdaaddasadd adasddas asdasdasda as?"/>
+
+        <LinearLayout
+            android:id="@+id/contest_challenge_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/contest_challenge_quit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Quit"
+                android:textColor="#7e8699"
+                android:textSize="14sp"
+                android:background="@drawable/challenge_contest_quit_button"/>
+
+            <Button
+                android:id="@+id/contest_challenge_next"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Next"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:background="@drawable/challenge_contest_next_button"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relative_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_product"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textAllCaps="true"
+            android:textColor="@color/primary_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/contact_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contact_name"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:singleLine="false"
+            android:text="Phone Number"
+            android:textColor="#6b6b6b"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/contact_select"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_check"
+                android:clickable="true" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--  <Button
+          android:id="@+id/select_send"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:layout_below="@+id/relative_selector"
+          android:layout_alignParentBottom="true"
+          android:background="@drawable/button_primary"
+          android:text="Select And Send"
+          android:textColor="@color/white"
+          android:textSize="20sp" />-->
+
+</RelativeLayout>

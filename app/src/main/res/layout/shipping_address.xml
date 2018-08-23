@@ -1,0 +1,179 @@
+<!--<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--android:id="@+id/main_content"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:fitsSystemWindows="true">-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_new">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Full Name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/edittext1"
+                android:textSize="12sp"
+                app:met_baseColor="@color/app_black"
+                app:met_errorColor="@color/app_red"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/primary_color"
+                app:met_singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColorHint="@color/edittext1"
+                android:textSize="12sp"
+                app:met_baseColor="@color/app_black"
+                app:met_errorColor="@color/app_red"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/primary_color"
+                app:met_singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/alternate_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alternate Mobile"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColorHint="@color/edittext1"
+                android:textSize="12sp"
+                app:met_baseColor="@color/app_black"
+                app:met_errorColor="@color/app_red"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/primary_color"
+                app:met_singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/address1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Address Line 1"
+                android:imeOptions="actionNext"
+                android:inputType="textPostalAddress"
+                android:singleLine="false"
+                android:textColorHint="@color/edittext1"
+                android:textSize="12sp"
+                app:met_baseColor="@color/app_black"
+                app:met_errorColor="@color/app_red"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/primary_color"
+                app:met_singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/address2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Address Line 2"
+                android:imeOptions="actionNext"
+                android:inputType="textPostalAddress"
+                android:singleLine="false"
+                android:textColorHint="@color/edittext1"
+                android:textSize="12sp"
+                app:met_baseColor="@color/app_black"
+                app:met_errorColor="@color/app_red"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/primary_color"
+                app:met_singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/zip_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="ZipCode"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textColorHint="@color/edittext1"
+                android:textSize="12sp"
+                app:met_baseColor="@color/app_black"
+                app:met_errorColor="@color/app_red"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/primary_color"
+                app:met_singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="State"
+                android:imeOptions="actionNext"
+                android:inputType="textPostalAddress"
+                android:singleLine="false"
+                android:textColorHint="@color/edittext1"
+                android:textSize="12sp"
+                app:met_baseColor="@color/app_black"
+                app:met_errorColor="@color/app_red"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/primary_color"
+                app:met_singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="City"
+                android:imeOptions="actionDone"
+                android:inputType="textPostalAddress"
+                android:singleLine="false"
+                android:textColorHint="@color/edittext1"
+                android:textSize="12sp"
+                app:met_baseColor="@color/app_black"
+                app:met_errorColor="@color/app_red"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/primary_color"
+                app:met_singleLineEllipsis="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/proceed"
+        style="@style/PrimaryButton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="CREATE" />
+
+</RelativeLayout>

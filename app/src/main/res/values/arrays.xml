@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="photo_picker_options">
+        <item>Gallery</item>
+        <item>Camera</item>
+    </string-array>
+    <string-array name="photo_picker_options_with_facebook">
+        <item>Gallery</item>
+        <item>Camera</item>
+        <item>Edit Facebook Photo</item>
+    </string-array>
+
+</resources>

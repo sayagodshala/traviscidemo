@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary_color">#ffc71f</color>
+    <color name="primary_color_light">#ffc71f</color>
+    <color name="primary_color_dark">#f4b908</color>
+    <color name="app_background">#e6ecff</color>
+    <color name="app_background_new">#edf1f4</color>
+    <item name="app_blue" type="color">#288cc8</item>
+    <item name="app_green" type="color">#64a032</item>
+    <item name="app_yellow" type="color">#fece08</item>
+    <item name="app_red" type="color">#ff3c3c</item>
+    <item name="app_white" type="color">#ffffff</item>
+    <item name="app_black" type="color">#000000</item>
+    <item name="transparent" type="color">#00000000</item>
+    <item name="black_transparent_1" type="color">#33000000</item>
+
+    <item name="collapse_bar_text_color" type="color">#83000000</item>
+    <item name="collapse_bar_text_color1" type="color">#82000000</item>
+    <item name="sign_up_edit_text_bg" type="color">#26323542</item>
+    <item name="sign_up_edit_text" type="color">#474a55</item>
+
+    <item name="new_user_signup_text" type="color">#cc323542</item>
+
+    <item name="sliding_drawer_menu" type="color">#626262</item>
+    <color name="grey0">#f7f8f9</color>
+    <color name="location_back">#f8f9f9</color>
+    <color name="grey1">#eff0f1</color>
+    <color name="grey2">#dedfe0</color>
+    <color name="grey3">#cdcecf</color>
+    <color name="grey4">#bcbdbe</color>
+    <color name="grey5">#a9aaac</color>
+    <color name="grey6">#999a9b</color>
+    <color name="grey7">#88898a</color>
+    <color name="grey8">#78797a</color>
+    <color name="grey9">#68696a</color>
+    <color name="grey10">#59595a</color>
+    <color name="grey11">#49494a</color>
+    <color name="grey12">#3b3b3c</color>
+    <color name="grey13">#2c2c2d</color>
+    <color name="grey14">#1e1e1e</color>
+    <color name="grey15">#101010</color>
+    <color name="test">#00ff00</color>
+    <color name="wt_circle">#dddddd</color>
+
+    <item name="app_bg_color" type="color">#f9f1e3</item>
+
+    <item name="grey_stroke1" type="color">#b0b3c0</item>
+    <item name="selected_tab_color" type="color">#642bbf</item><!-- #654597 -->
+    <color name="notification_bar_clr">#664597</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="read_bg">#f5f5f5</color>
+    <color name="header">#A81D22</color>
+    <color name="primary_button_normal">#ffd24c</color>
+    <color name="primary_button_pressed">#cba83d</color>
+    <color name="divider">#D6D6D6</color>
+    <color name="black_text_color">#323232</color>
+    <color name="header_bg">#B8DCDD</color>
+    <color name="gray">#CDCDCD</color>
+    <color name="dark_gray">#8E8E8E</color>
+    <color name="dark_gray1">#616161</color>
+    <color name="dark_gray2">#434343</color>
+    <color name="light_grey1">#d1d1d1</color>
+    <color name="light_grey2">#d3d3d3</color>
+    <color name="light_gray3">#8d8d8d</color>
+    <color name="control_background">#8E8E8E</color>
+    <color name="navigation_drawer_backgroud">#c8372020</color>
+    <color name="drawer_tint_color_normal">@color/dark_gray</color>
+    <color name="drawer_tint_color_selected">@color/grey9</color>
+    <item name="facebook_normal" type="color">#3b5998</item>
+    <item name="twitter_normal" type="color">#55acee</item>
+    <item name="facebook_pressed" type="color">#2b4885</item>
+    <item name="twitter_pressed" type="color">#4a9ddd</item>
+    <item name="google_normal" type="color">#dd4b39</item>
+    <item name="google_pressed" type="color">#c53927</item>
+    <item name="white_transparent" type="color">#00ffffff</item>
+    <item name="black_transparent" type="color">#53000000</item>
+    <item name="black_transparent1" type="color">#53232323</item>
+    <item name="black_transparent2" type="color">#53433f3f</item>
+    <item name="play_area_backcolor" type="color">#dcffffff</item>
+
+    <item name="tray1" type="color">#efeeee</item>
+    <item name="h1" type="color">#212121</item>
+    <item name="p1" type="color">#757575</item>
+    <item name="edittext1" type="color">#818080</item>
+    <item name="edittext2" type="color">#212121</item>
+    <item name="label" type="color">#9E9E9E</item>
+    <item name="black_fade" type="color">#3c000000</item>
+    <item name="step_normal" type="color">#00ffffff</item>
+    <item name="step_active" type="color">#74c268</item>
+    <item name="step_played" type="color">#ffffff</item>
+    <item name="text_label" type="color">#6339a5</item>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+
+    <array name="array_dot_active">
+        <item>@color/primary_color</item>
+        <item>@color/primary_color</item>
+        <item>@color/primary_color</item>
+        <item>@color/primary_color</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/grey4</item>
+        <item>@color/grey4</item>
+        <item>@color/grey4</item>
+        <item>@color/grey4</item>
+    </array>
+
+    <color name="progress_number">#2c2f38</color>
+    <color name="progress_title">#654597</color>
+    <color name="progress_total">#928d9b</color>
+    <color name="progress_empty">#f2f4f4</color>
+    <color name="progress_challenge">#7966ad</color>
+    <color name="progress_refferal">#1eaf6c</color>
+    <color name="progress_points">#fdbd36</color>
+    <color name="progress_raffles">#2d90e0</color>
+
+    <color name="own_your_team_light_bg">#5368e3</color>
+    <color name="own_your_team_transparent_bg">#005368e3</color>
+    <color name="own_your_team_dark_bg">#3046c3</color>
+    <color name="ipl_theme_color">#3046c3</color>
+    <color name="mcl_status_bar_color">#25389e</color>
+
+    <color name="ball_run_color">#757a89</color>
+    <color name="ball_four_color">#15c7a0</color>
+    <color name="ball_six_color">#1571c7</color>
+    <color name="ball_wicket_color">#f44d4d</color>
+    <color name="ball_nb_wb_color">#5e6373</color>
+    <color name="ball_dot_ball_color">#757a89</color>
+
+    <color name="team_csk">#ffd200</color>
+    <color name="team_rcb">#ff3939</color>
+    <color name="team_srh">#ff5a39</color>
+    <color name="team_mi">#2e6eff</color>
+    <color name="team_kkr">#7a46eb</color>
+    <color name="team_rr">#3971ff</color>
+    <color name="team_dd">#df3636</color>
+    <color name="team_kxip">#f34a50</color>
+    <color name="win_txt_clr">#969696</color>
+
+</resources>

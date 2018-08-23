@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/white_rounded_new_promo_dialog">
+
+        <TextView
+            android:id="@+id/rules_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Participation Criteria &amp; Rules"
+            android:layout_marginTop="10dp"
+            android:textColor="#515151"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/rules_view"
+            android:layout_below="@id/rules_title"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey5" />
+
+        <ScrollView
+            android:layout_below="@+id/rules_view"
+            android:layout_above="@+id/rules_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/rules_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:padding="10dp"
+            android:text="You have won 25,000 points."
+            android:textColor="#7f7f7f"
+            android:textSize="14sp" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/rules_close"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/redeem_button"
+            android:text="@string/spin_win_dialog_close"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

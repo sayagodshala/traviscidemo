@@ -1,0 +1,72 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="toolbar_inset_start">50dp</dimen>
+    <dimen name="toolbar_height">60dp</dimen>
+    <dimen name="screen_padding">16dp</dimen>
+    <dimen name="drawer_icon_size">24dp</dimen>
+    <dimen name="nav_item_start_padding">16dp</dimen>
+
+    <dimen name="report_textview_size">14sp</dimen>
+    <dimen name="report_edittext_size">15sp</dimen>
+    <dimen name="report_edittext_height">40dp</dimen>
+    <dimen name="button_height">36dp</dimen>
+    <dimen name="common_margin">16dp</dimen>
+    <dimen name="detail_backdrop_height">200dp</dimen>
+
+    <dimen name="grid">5dp</dimen>
+    <dimen name="spacing">16dp</dimen>
+
+    <dimen name="item_offset">10dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="dip400">400dp</dimen>
+    <dimen name="dip350">350dp</dimen>
+    <dimen name="dip300">300dp</dimen>
+    <dimen name="dip250">250dp</dimen>
+    <dimen name="dip200">200dp</dimen>
+    <dimen name="dip180">180dp</dimen>
+    <dimen name="dip100">100dp</dimen>
+    <dimen name="dip90">90dp</dimen>
+    <dimen name="dip80">80dp</dimen>
+    <dimen name="dip75">75dp</dimen>
+    <dimen name="dip70">70dp</dimen>
+    <dimen name="dip67">67dp</dimen>
+    <dimen name="dip65">65dp</dimen>
+    <dimen name="dip60">60dp</dimen>
+    <dimen name="dip50">50dp</dimen>
+    <dimen name="dip45">45dp</dimen>
+    <dimen name="dip40">40dp</dimen>
+    <dimen name="dip35">35dp</dimen>
+    <dimen name="dip30">30dp</dimen>
+    <dimen name="dip25">25dp</dimen>
+    <dimen name="dip20">20dp</dimen>
+    <dimen name="dip15">15dp</dimen>
+    <dimen name="dip12">12dp</dimen>
+    <dimen name="dip10">10dp</dimen>
+    <dimen name="dip9">9dp</dimen>
+    <dimen name="dip8">8dp</dimen>
+    <dimen name="dip7">7dp</dimen>
+    <dimen name="dip6">6dp</dimen>
+    <dimen name="dip5">5dp</dimen>
+    <dimen name="dip4">4dp</dimen>
+    <dimen name="dip3">3dp</dimen>
+    <dimen name="dip2">2dp</dimen>
+    <dimen name="dip1">1dp</dimen>
+
+    <!-- padding in minus -->
+    <dimen name="minus_dip10">-10dp</dimen>
+    <dimen name="minus_dip15">-15dp</dimen>
+    <dimen name="minus_dip20">-20dp</dimen>
+    <dimen name="minus_dip30">-30dp</dimen>
+    <dimen name="minus_dip40">-40dp</dimen>
+    <dimen name="minus_dip50">-50dp</dimen>
+
+
+    <dimen name="notification_dialog_radius">8dp</dimen>
+    <dimen name="dialog_bg_corner_radius">3dp</dimen>
+
+
+    <dimen name="text_margin">16dp</dimen>
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/main_item_hldr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dip10"
+        android:paddingRight="@dimen/dip10"
+        android:paddingTop="@dimen/dip10"
+        android:paddingBottom="@dimen/dip10"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dip5"
+        android:background="@drawable/backgoun_raffle_history"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/code_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/congratulations"
+            android:textStyle="bold"
+            android:textColor="@color/selected_tab_color"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/you_won_head"
+            android:textColor="@color/dark_gray1"
+            android:textSize="13sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            />
+
+        <View
+            android:layout_width="@dimen/dip100"
+            android:layout_height="0.5dp"
+            android:background="@color/light_grey1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dip10"
+            android:visibility="visible"
+            />
+
+        <TextView
+            android:id="@+id/desc_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="5 mins ago"
+            android:layout_marginTop="@dimen/dip10"
+            android:textColor="@color/light_gray3"
+            android:textSize="12sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+    <!-- <RelativeLayout
+        android:id="@+id/notification_count_hldr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dip10"
+        android:paddingRight="@dimen/dip10"
+        android:paddingTop="@dimen/dip5"
+        android:paddingBottom="@dimen/dip5">
+        
+        <LinearLayout
+            android:id="@+id/congress_hldr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/contest_img"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/code_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/congratulations"
+                    android:textStyle="bold"
+                    android:textColor="@color/selected_tab_color"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/you_won_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/code_txt"
+                    android:layout_centerVertical="true"
+                    android:text="@string/you_won_head"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/dip5"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="11sp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/desc_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="5 mins ago"
+                android:layout_marginLeft="@dimen/dip2"
+                android:textColor="@color/light_grey1"
+                android:textSize="13sp"/>
+            
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dark_gray"
+        android:visibility="visible"
+        />-->
+
+</RelativeLayout>

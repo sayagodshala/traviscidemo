@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.SplashActivity">
+
+    <!--<item-->
+        <!--android:id="@+id/change_password"-->
+        <!--android:icon="@drawable/ic_password"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="Password"-->
+        <!--app:showAsAction="always" />-->
+
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/ic_delete1"
+        android:orderInCategory="100"
+        android:title="Delete"
+        app:showAsAction="always" />
+
+    <!--<item-->
+        <!--android:id="@+id/coins_history"-->
+        <!--android:icon="@drawable/ic_coin"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="Coins"-->
+        <!--app:showAsAction="always" />-->
+
+</menu>

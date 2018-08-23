@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:bottomLeftRadius="0dp"
+        android:bottomRightRadius="0dp"
+        android:topLeftRadius="@dimen/notification_dialog_radius"
+        android:topRightRadius="@dimen/notification_dialog_radius"/>
+
+    <solid android:color="@color/notification_bar_clr"></solid>
+</shape>

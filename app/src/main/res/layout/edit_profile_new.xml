@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dummy_profile_image" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/take_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="-25dp"
+                android:clickable="true"
+                android:src="@drawable/ic_camera_white" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/edit_full_name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/edittext1"
+                android:textSize="12sp"
+                app:met_baseColor="@color/app_black"
+                app:met_errorColor="@color/app_red"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/primary_color"
+                app:met_singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Last Name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/edittext1"
+                android:textSize="12sp"
+                android:visibility="gone"
+                app:met_baseColor="@color/app_black"
+                app:met_errorColor="@color/app_red"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/primary_color"
+                app:met_singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/edit_email"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/edittext1"
+                android:textSize="12sp"
+                app:met_baseColor="@color/app_black"
+                app:met_errorColor="@color/app_red"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/primary_color"
+                app:met_singleLineEllipsis="true" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/edit_location"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:textColorHint="@color/edittext1"
+                android:textSize="12sp"
+                app:met_baseColor="@color/app_black"
+                app:met_errorColor="@color/app_red"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/primary_color"
+                app:met_singleLineEllipsis="true" />
+
+            <LinearLayout
+                android:id="@+id/linear_list"
+                android:layout_width="match_parent"
+                android:layout_height="243.5dp"
+                android:layout_marginTop="-22dp"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/location_list_border">
+
+                <ListView
+                    android:id="@+id/list_views"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/grey3"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:dividerHeight="0.5dp"
+                    android:scrollbars="none"></ListView>
+            </LinearLayout>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/zipcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/edit_zip"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textColorHint="@color/edittext1"
+                android:textSize="12sp"
+                app:met_baseColor="@color/app_black"
+                app:met_errorColor="@color/app_red"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/primary_color"
+                app:met_singleLineEllipsis="true" />
+
+            <!-- <com.rengwuxian.materialedittext.MaterialEditText
+                 android:id="@+id/birthday"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:hint="DateOfBirth"
+                 android:textColorHint="@color/edittext1"
+                 android:textSize="12sp"
+                 app:met_baseColor="@color/app_black"
+                 app:met_errorColor="@color/app_red"
+                 app:met_floatingLabel="highlight"
+                 app:met_primaryColor="@color/primary_color"
+                 app:met_singleLineEllipsis="true" />-->
+            <LinearLayout
+                android:id="@+id/dob_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/edit_dob"
+                    android:textColor="@color/label"
+                    android:textSize="12sp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/primary_color" />
+
+                    <TextView
+                        android:id="@+id/dob_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:hint="dd/mm/yyyy"
+                        android:imeOptions="actionNext"
+                        android:inputType="date"
+                        android:textSize="12sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/date_text_d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:gravity="center"
+                            android:hint="@string/edit_date"
+                            android:imeOptions="actionNext"
+                            android:inputType="date"
+                            android:maxLength="2"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/d_slash"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:imeOptions="actionNext"
+                            android:text="/" />
+
+                        <EditText
+                            android:id="@+id/date_text_m"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"
+                            android:hint="@string/edit_month"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/m_slash"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:imeOptions="actionNext"
+                            android:text="/"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/date_text_y"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"
+                            android:hint="@string/edit_year"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:hint="DD/MM/YYYY"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/primary_color" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit_gender"
+                    android:textColor="@color/label"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/male"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_gender"
+                    android:gravity="center"
+                    android:text="@string/edit_gender_m"
+                    android:textColor="@color/gender_text_item" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="/"
+                    android:textColor="@color/app_black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/female"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/button_gender"
+                    android:gravity="center"
+                    android:text="@string/edit_gender_f"
+                    android:textColor="@color/gender_text_item" />
+
+            </LinearLayout>
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/edit_about"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textColorHint="@color/edittext1"
+                android:textSize="12sp"
+                app:met_baseColor="@color/app_black"
+                app:met_errorColor="@color/app_red"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/primary_color"
+                app:met_singleLineEllipsis="true" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingRight="2dp"
+                    android:text="@string/edit_enable_mobile_data"
+                    android:textColor="@color/p1"
+                    android:textSize="14sp" />
+
+                <Switch
+                    android:id="@+id/offline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#b2a2cb"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:theme="@style/SwitchStyle" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/save"
+                style="@style/PrimaryButton"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/edit_submit" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/loader_layout"/>
+
+</RelativeLayout>

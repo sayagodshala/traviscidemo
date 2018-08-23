@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:id="@+id/total_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/white_rounded_update">
+
+        <View
+            android:id="@+id/pattern"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/app_update_back" />
+
+        <ImageView
+            android:id="@+id/profile_percentage"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17.5dp"
+            android:src="@drawable/profile_per_base_with_stars" />
+
+        <ProgressBar
+            android:id="@+id/profile_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circle_shape"
+            android:indeterminate="false"
+            android:max="100"
+            android:progressDrawable="@drawable/profile_progress_color"
+            android:secondaryProgress="100" />
+
+        <TextView
+            android:id="@+id/progress_percentage"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="0%"
+            android:textColor="#2c2f38"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/profile_update_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_progress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-35dp"
+            android:gravity="center"
+            android:text="@string/update_your_profile"
+            android:textColor="#515151"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_below="@+id/profile_update_title">
+
+            <LinearLayout
+                android:id="@+id/gender_selection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingRight="20dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/male_image"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/button_gender_male" />
+
+                    <TextView
+                        android:id="@+id/male_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#5b5b5b"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/divider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gender_divider"
+                    android:padding="14dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="20dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/female_image"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/button_gender_female"
+                        android:padding="14dp" />
+
+                    <TextView
+                        android:id="@+id/female_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#5b5b5b"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dob_hldr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:gravity="center"
+                >
+
+                <DatePicker
+                    android:id="@+id/dob_datepicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                     android:datePickerMode="spinner"
+                    android:calendarViewShown="false"></DatePicker>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+            android:id="@+id/dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/date"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:hint="dd"
+                    android:textColorHint="#b8b8b8"
+                    android:textColor="#5b5b5b"
+                    android:textSize="11sp"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/button_answer_normal"/>
+
+                <EditText
+                    android:id="@+id/month"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColorHint="#b8b8b8"
+                    android:textColor="#5b5b5b"
+                    android:textSize="11sp"
+                    android:maxLength="2"
+                    android:hint="mm"
+                    android:inputType="date"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/button_answer_normal"/>
+
+                <EditText
+                    android:id="@+id/year"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:textColorHint="#b8b8b8"
+                    android:textColor="#5b5b5b"
+                    android:textSize="11sp"
+                    android:inputType="date"
+                    android:maxLength="4"
+                    android:hint="yyyy"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/button_answer_normal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_answer_normal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    >
+
+
+
+                    <EditText
+                    android:id="@+id/user_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter your location"
+                    android:textColorHint="#b8b8b8"
+                    android:textColor="#5b5b5b"
+                    android:textSize="11sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                        android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:background="@color/transparent"
+                    android:layout_toLeftOf="@+id/location_img"/>
+
+                    <ImageView
+                        android:id="@+id/location_img"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/location_icon"
+                        android:layout_marginRight="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content"
+            android:layout_marginTop="-25dp"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/location_list_border">
+
+        <ListView
+            android:id="@+id/list_views"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/grey3"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:dividerHeight="0.5dp"
+            android:scrollbars="none"></ListView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/profile_update_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/earn_points_on_profile_update_str"
+            android:textColor="#7f7f7f"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/profile_update"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/profile_update_desc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/redeem_button"
+            android:gravity="center"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/or"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_update"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="or"
+            android:textColor="#cfcfcf"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/skip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/or"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="Skip"
+            android:textColor="#727272"
+            android:textSize="13sp" />
+    </RelativeLayout>
+</RelativeLayout>

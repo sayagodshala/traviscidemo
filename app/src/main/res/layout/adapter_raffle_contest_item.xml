@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.RoundedImageView
+        android:id="@+id/item_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/daily_challenge_banner"
+        app:riv_corner_radius="5dp"
+        android:layout_marginTop="@dimen/dip7"
+        android:layout_marginBottom="@dimen/dip7"
+        />
+
+    <RelativeLayout
+        android:id="@+id/alrady_played_hldr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/item_img"
+        android:layout_alignBottom="@+id/item_img"
+        android:layout_alignRight="@+id/item_img"
+        android:layout_alignLeft="@id/item_img"
+        android:visibility="gone">
+
+    <com.makeramen.RoundedImageView
+        android:id="@+id/item_img_overview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:riv_corner_radius="5dp"
+        android:src="@drawable/challenge_played"
+        /><!-- android:src="#c8000000" -->
+
+    <TextView
+        android:id="@+id/item_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:text="@string/already_played"
+        android:textSize="@dimen/dip20"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dip10"
+        android:textColor="@color/app_white"
+        android:visibility="gone"/>
+    </RelativeLayout>
+
+</RelativeLayout>

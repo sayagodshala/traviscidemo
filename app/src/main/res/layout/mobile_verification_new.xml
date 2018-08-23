@@ -1,0 +1,200 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/login_logo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/login_logo" />
+
+            <TextView
+                android:id="@+id/simple_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_logo"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/verify_mob"
+                android:textColor="@color/text_label"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/simple_text"
+                android:background="@drawable/white_rounded_new"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_mob_grey"
+                    android:drawablePadding="5dp"
+                    android:hint="@string/mobile_verifi_enter_mobile"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textColorHint="@color/edittext1"
+                    android:textSize="16sp"
+                    android:visibility="visible"
+                    app:met_baseColor="@color/app_black"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@color/primary_color"
+                    app:met_singleLineEllipsis="true" />
+                <!-- app:met_errorColor="@color/app_red"-->
+                <RelativeLayout
+                    android:id="@+id/password_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/entered_mob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:drawableLeft="@drawable/ic_mob_grey"
+                        android:drawablePadding="5dp"
+                        android:text="9581325595"
+                        android:textColor="#b186f4"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:drawableLeft="@drawable/ic_lock_grey"
+                        android:drawablePadding="5dp"
+                        android:hint="@string/mobile_verifi_enter_password"
+                        android:imeOptions="actionDone"
+                        android:password="true"
+                        android:textColorHint="@color/edittext1"
+                        android:textSize="18sp"
+                        app:met_baseColor="@color/app_black"
+                        app:met_floatingLabel="highlight"
+                        app:met_primaryColor="@color/primary_color"
+                        app:met_singleLineEllipsis="true" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignRight="@+id/password"
+                        android:layout_below="@+id/entered_mob"
+                        android:orientation="vertical">
+
+                        <Switch
+                            android:id="@+id/show_hide_pw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp" />
+
+                        <TextView
+                            android:id="@+id/show_hide_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="-5dp"
+                            android:text="@string/fogot_pw_show"
+                            android:textColor="#cccccc"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/forgot_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/password"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/mobile_verifi_forgot_password"
+                        android:textColor="#6940a9"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/button_proceed"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_otp_verify"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/spacer_or"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/facebook_login"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="1dp"
+                        android:background="#C2C2C2" />
+
+                    <TextView
+                        android:id="@+id/or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/mobile_verifi_or"
+                        android:textColor="#CFCFCF"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="1dp"
+                        android:background="#C2C2C2" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/facebook_login"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_facebook_signin"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <include layout="@layout/loader_layout"/>
+</RelativeLayout>

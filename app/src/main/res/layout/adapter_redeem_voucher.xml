@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dip5"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.RoundedImageView
+        android:id="@+id/item_bg_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip80"
+        android:scaleType="fitXY"
+        android:src="@drawable/daily_challenge_banner"
+        app:riv_corner_radius="@dimen/dip2"
+        />
+
+    <RelativeLayout
+        android:id="@+id/main_item_hldr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/item_bg_img"
+        android:layout_alignBottom="@+id/item_bg_img"
+        android:layout_alignRight="@+id/item_bg_img"
+        android:layout_alignLeft="@id/item_bg_img"
+        android:paddingTop="@dimen/dip10"
+        android:paddingBottom="@dimen/dip10">
+
+
+        <com.makeramen.RoundedImageView
+            android:id="@+id/item_img"
+            android:layout_width="@dimen/dip60"
+            android:layout_height="@dimen/dip70"
+            android:scaleType="fitXY"
+            android:src="@drawable/challenge_played"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dip10"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/item_img"
+            android:layout_alignTop="@id/item_img"
+            android:layout_alignBottom="@+id/item_img"
+            android:layout_marginLeft="@dimen/dip10"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/item_head_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:text="@string/already_played"
+                android:textSize="18sp"
+                android:textColor="@color/app_white"
+                android:visibility="visible"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/item_desc_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_head_tv"
+                android:scaleType="fitXY"
+                android:text="@string/already_played"
+                android:textSize="13sp"
+                android:textColor="@color/app_white"
+                android:visibility="visible"
+                />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/right_arrow_img"
+            android:layout_width="@dimen/dip8"
+            android:layout_height="@dimen/dip15"
+            android:scaleType="fitXY"
+            android:src="@drawable/arrow_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dip10"
+            android:layout_marginRight="@dimen/dip10"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+

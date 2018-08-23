@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/primary_color"
+    android:minHeight="45dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    app:contentInsetStartWithNavigation="0dp"
+    app:layout_scrollFlags="scroll|enterAlways"
+    app:navigationIcon="@drawable/main_menu"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    tools:ignore="MissingPrefix">
+
+    <!-- <LinearLayout
+         android:id="@+id/user_text"
+         android:layout_width="match_parent"
+         android:gravity="center_horizontal"
+         android:orientation="horizontal">
+ -->
+    <!--<ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/logo_new"
+        android:visibility="gone" />-->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MeraBreak"
+        android:textColor="@color/selected_tab_color"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <!--</LinearLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/user_points"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/spin_count_hldr"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+        <ImageView
+            android:id="@+id/spin_icon"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginRight="10dp"
+            android:visibility="visible"
+            android:clickable="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/toolbar_spin_icon_2" />
+
+        <TextView
+            android:id="@+id/spin_count"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="-8dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@drawable/spin_count_circle"
+            android:layout_alignRight="@+id/spin_icon"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="9sp"
+            />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/notification_count_hldr"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/spin_count_hldr"
+            >
+
+            <ImageView
+                android:id="@+id/notification_icon"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginRight="10dp"
+                android:visibility="visible"
+                android:clickable="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_notification" />
+
+
+            <TextView
+                android:id="@+id/notification_count"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="-8dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:background="@drawable/spin_count_circle"
+                android:layout_alignRight="@+id/notification_icon"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="9sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/points_icon"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/notification_count_hldr"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:src="@drawable/wallet_icon" />
+
+        <TextView
+            android:id="@+id/pointsNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"
+            android:text=""
+            android:textColor="@color/selected_tab_color"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pointsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="points"
+            android:textAlignment="center"
+            android:textColor="@color/selected_tab_color"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginRight="16dp">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:background="@drawable/toolbar_notification" />-->
+    <!--</RelativeLayout>-->
+</android.support.v7.widget.Toolbar>

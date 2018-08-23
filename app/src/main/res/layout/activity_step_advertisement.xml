@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000">
+
+        <Button
+            android:id="@+id/skip_btn"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:background="@drawable/play_button"
+            android:text="@string/skip"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:id="@+id/ads_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dummy_product_image"
+            android:visibility="gone" />
+
+
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:id="@+id/ads_youtube_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+
+        <com.github.rtoshiro.view.video.FullscreenVideoLayout
+            android:id="@+id/ads_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <VideoView
+            android:id="@+id/ads_videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:foregroundGravity="center"
+            />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="100"
+        android:visibility="gone"/>>
+
+    <RelativeLayout
+        android:id="@+id/skip_hldr"
+        android:layout_width="@dimen/dip45"
+        android:layout_height="@dimen/dip45"
+        android:layout_below="@+id/progressbar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dip10"
+        android:layout_marginTop="@dimen/dip10"
+        >
+
+        <com.makeramen.RoundedImageView
+            android:layout_width="@dimen/dip45"
+            android:layout_height="@dimen/dip45"
+            app:riv_oval="true"
+            android:src="@color/collapse_bar_text_color1"/>
+
+        <ImageButton
+            android:id="@+id/skip_img_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_skip"
+            android:background="@color/transparent"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"/>
+
+        <ProgressBar
+            android:id="@+id/view_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="@dimen/dip45"
+            android:layout_height="@dimen/dip45"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:progressDrawable="@drawable/drawable_circularprogressbar" />
+
+        <ProgressBar
+            android:id="@+id/progressbar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="100"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+

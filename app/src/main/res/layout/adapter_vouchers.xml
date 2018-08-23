@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    ><!-- android:background="#ff0000" -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:id="@+id/claim_hldr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_white_bottom_corners_rounded"
+            android:layout_marginLeft="@dimen/dip15"
+            android:layout_marginRight="@dimen/dip15"
+            android:layout_marginTop="@dimen/dip5"
+            android:paddingLeft="@dimen/dip15"
+            android:paddingRight="@dimen/dip15"
+            android:paddingBottom="@dimen/dip15"
+            android:layout_marginBottom="@dimen/dip5"
+            android:paddingTop="@dimen/dip10"
+            android:elevation="@dimen/dip3"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="65dp"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:background="@drawable/list_background"
+                android:layout_margin="@dimen/dip5"
+                android:visibility="invisible">
+
+           </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/content_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dip5"
+                android:text="Voucher Description"
+                android:textColor="@color/dark_gray"
+                android:textSize="13sp"/>
+
+            <Button
+                android:id="@+id/claim_btn"
+                style="@style/PrimaryButton"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="150dp"
+                android:layout_marginTop="@dimen/dip15"
+                android:text="@string/claim"
+                android:textAllCaps="false"/></LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/voucher_item_hldr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/selector_voucher_list_item"
+            android:elevation="@dimen/dip3"
+            android:layout_margin="@dimen/dip5"
+            >
+
+            <ImageView
+                android:id="@+id/voucher_img"
+                android:layout_width="65dp"
+                android:layout_height="70dp"
+                android:src="@drawable/first_prize_background"
+                android:scaleType="fitXY"
+                android:layout_margin="@dimen/dip8"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/voucher_img"
+                android:layout_alignTop="@+id/voucher_img"
+                android:layout_alignBottom="@+id/voucher_img"
+                android:layout_toLeftOf="@+id/arrow_img">
+
+                <TextView
+                    android:id="@+id/voucher_name_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs.500 Flipkart Voucher"
+                    android:textStyle="bold"
+                    android:textColor="@color/selected_tab_color"
+                    android:textSize="15sp"/>
+
+                <RelativeLayout
+                    android:id="@+id/title_cross_hldr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/voucher_name_txt"
+                    android:layout_alignBottom="@+id/voucher_name_txt"
+                    android:layout_alignLeft="@+id/voucher_name_txt"
+                    android:layout_alignRight="@+id/voucher_name_txt">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:background="@color/selected_tab_color"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/applicable_for_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/voucher_name_txt"
+                    android:text="This voucher applicable for Delhi only"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="10sp"/>
+
+                <RelativeLayout
+                    android:id="@+id/sub_title_cross_hldr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/voucher_name_txt"
+                    android:layout_alignTop="@+id/applicable_for_txt"
+                    android:layout_alignBottom="@+id/applicable_for_txt"
+                    android:layout_alignLeft="@+id/applicable_for_txt"
+                    android:layout_alignRight="@+id/applicable_for_txt"
+                    android:gravity="center_horizontal">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:background="@color/dark_gray"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/voucher_left_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/light_grey1"
+                    android:textSize="10sp"/>
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/arrow_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_down"
+                android:scaleType="fitXY"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dip10"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/white_rounded"
+        android:layout_margin="@dimen/dip5"
+        android:elevation="@dimen/dip10">
+
+        <ImageView
+            android:id="@+id/voucher_img"
+            android:layout_width="85dp"
+            android:layout_height="90dp"
+            android:src="@drawable/first_prize_background"
+            android:scaleType="fitXY"
+            android:layout_margin="@dimen/dip8"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/voucher_img"
+            android:layout_alignTop="@+id/voucher_img"
+            android:layout_alignBottom="@+id/voucher_img"
+            android:layout_toLeftOf="@+id/arrow_img">
+
+            <TextView
+                android:id="@+id/voucher_name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs.500 Flipkart Voucher"
+                android:textStyle="bold"
+                android:textColor="@color/selected_tab_color"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/applicable_for_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/voucher_name_txt"
+                android:text="@string/you_won_head"
+                android:textColor="@color/dark_gray"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/voucher_left_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/light_grey1"
+                android:textSize="11sp"/>
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/arrow_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_down"
+            android:scaleType="fitXY"
+            android:layout_margin="@dimen/dip8"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dip5"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

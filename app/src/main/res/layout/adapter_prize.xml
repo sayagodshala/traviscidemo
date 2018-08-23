@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/voucher_item_hldr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dip5"
+        android:paddingRight="@dimen/dip5"
+        android:paddingTop="@dimen/dip5"
+        android:paddingBottom="@dimen/dip5"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <com.makeramen.RoundedImageView
+            android:id="@+id/item_img"
+            android:layout_width="@dimen/dip70"
+            android:layout_height="@dimen/dip70"
+            android:src="@drawable/dummy_challenge_image"
+            app:riv_oval="false"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dip10"
+            android:layout_marginRight="@dimen/dip10"/>
+
+        <TextView
+            android:id="@+id/title_txt"
+            android:layout_width="@dimen/dip100"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip5"
+            android:paddingLeft="@dimen/dip8"
+            android:paddingRight="@dimen/dip10"
+            android:maxLines="2"
+            android:textColor="@color/dark_gray2"
+            android:textSize="12sp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/vertical_view_hldr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/voucher_item_hldr"
+        android:layout_alignTop="@+id/voucher_item_hldr"
+        android:layout_alignBottom="@+id/voucher_item_hldr"
+        android:gravity="center_vertical">
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="@dimen/dip60"
+        android:background="@color/gray"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/dip1"/>
+    </RelativeLayout>
+
+</RelativeLayout>

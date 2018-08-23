@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:ignore="MissingPrefix">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/white_rounded_new_promo_dialog"
+       android:orientation="vertical">
+
+       <TextView
+           android:id="@+id/dialod_title"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/main_wallet_title"
+           android:layout_marginTop="5dp"
+           android:gravity="center"
+           android:textSize="18sp"
+           android:textStyle="bold"
+           android:textColor="#593b89"/>
+
+       <RelativeLayout
+           android:id="@+id/points_rela"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+           android:paddingLeft="15dp"
+           android:paddingRight="15dp">
+           
+           <ImageView
+               android:id="@+id/points_image"
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:layout_alignParentLeft="true"
+               android:src="@drawable/wallet_point_icon"/>
+
+           <TextView
+               android:id="@+id/wallet_points_title"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/main_wallet_points"
+               android:layout_marginLeft="40dp"
+               android:textSize="16sp"
+               android:textStyle="bold"
+               android:textColor="#515151"
+               android:layout_centerVertical="true" />
+
+           <TextView
+               android:id="@+id/wallet_points"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="100000"
+               android:layout_centerInParent="true"
+               android:layout_alignParentRight="true"
+               android:textSize="16sp"
+               android:textStyle="bold"
+               android:textColor="#593b89"/>
+           
+       </RelativeLayout>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:layout_marginTop="5dp"
+           android:background="#eff0f1"/>
+
+       <RelativeLayout
+           android:id="@+id/super_points_rela"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+           android:paddingLeft="15dp"
+           android:paddingRight="15dp">
+
+           <ImageView
+               android:id="@+id/super_points_image"
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:layout_alignParentLeft="true"
+               android:src="@drawable/wallet_super_points_icon"/>
+
+           <TextView
+               android:id="@+id/wallet_super_points_title"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/main_wallet_super_points"
+               android:layout_marginLeft="40dp"
+               android:textSize="16sp"
+               android:textStyle="bold"
+               android:textColor="#515151"
+               android:layout_centerVertical="true" />
+
+           <TextView
+               android:id="@+id/wallet_super_points"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="100000"
+               android:layout_centerInParent="true"
+               android:layout_alignParentRight="true"
+               android:textSize="16sp"
+               android:textStyle="bold"
+               android:textColor="#593b89"/>
+
+       </RelativeLayout>
+       <RelativeLayout
+           android:id="@+id/info_rela"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+           android:paddingLeft="15dp">
+       <ImageView
+           android:id="@+id/info_image"
+           android:layout_width="15dp"
+           android:layout_height="15dp"
+           android:src="@drawable/info_icon"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="20dp"
+               android:textColor="#cccccc"
+               android:textStyle="italic"
+               android:textSize="12sp"
+               android:text="@string/main_wallet_note"/>
+      </RelativeLayout>
+
+
+
+       <!--<LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginLeft="12dp"
+           android:layout_marginRight="12dp"
+           android:layout_marginTop="25dp"
+           android:layout_marginBottom="15dp">
+
+           <Button
+               android:id="@+id/wallet_close"
+               android:layout_width="0dp"
+               android:layout_height="30dp"
+               android:layout_weight="1"
+               android:layout_gravity="center"
+               android:background="#f6f6f6"
+               android:text="@string/spin_win_dialog_close"
+               android:textAllCaps="false"
+               android:textColor="#7e8699"
+               android:textSize="16sp" />
+
+           <Button
+               android:id="@+id/wallet_redeem"
+               android:layout_width="0dp"
+               android:layout_height="30dp"
+               android:layout_weight="1"
+               android:textAllCaps="false"
+               android:textColor="@color/white"
+               android:textSize="18sp"
+               android:layout_gravity="center"
+               android:background="@drawable/redeem_button"
+               android:text="@string/main_wallet_redeem"/>
+
+       </LinearLayout>-->
+
+       <Button
+           android:id="@+id/wallet_redeem"
+           android:layout_width="140dp"
+           android:layout_height="30dp"
+           android:layout_below="@+id/profile_update_desc"
+           android:layout_gravity="center"
+           android:layout_marginTop="25dp"
+           android:layout_marginBottom="5dp"
+           android:background="@drawable/redeem_button"
+           android:gravity="center"
+           android:text="@string/main_wallet_redeem"
+           android:textAllCaps="false"
+           android:textColor="@color/white"
+           android:textSize="10sp" />
+
+       <TextView
+           android:id="@+id/or"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/profile_update"
+           android:layout_centerHorizontal="true"
+           android:layout_marginBottom="5dp"
+           android:gravity="center"
+           android:text="or"
+           android:textColor="#cfcfcf"
+           android:textSize="10sp" />
+
+       <Button
+           android:id="@+id/wallet_close"
+           android:layout_width="match_parent"
+           android:layout_height="20dp"
+           android:layout_marginBottom="15dp"
+           android:gravity="center"
+           android:text="@string/spin_win_dialog_close"
+           android:textColor="#727272"
+           android:textSize="10sp"
+           android:textAllCaps="false"
+           android:background="@color/transparent"/>
+   </LinearLayout>
+</RelativeLayout>

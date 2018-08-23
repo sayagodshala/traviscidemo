@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/button_trivia_quiz"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:text="KKR"
+        android:layout_margin="3dp"
+        android:textColor="@color/trivia_quiz" />
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:padding="@dimen/dip10">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_bottom_corners_rounded"
+        android:padding="@dimen/dip10">
+
+    <TextView
+        android:id="@+id/applicable_for_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ydugugf uhfudgb uriguibfdgu giufidgu uygdug 8ug8 uerg8 ure 8ur9u9 eru9 gur9e 9reu 9ut 9r9ir 9ri9ri rt9eir 9irte9ir 9ier9 ire9i 9rei 9gri g9i9git 9gt 9gi 9g9"
+        android:textStyle="bold"
+        android:textColor="@color/dark_gray"
+        android:textSize="13sp"/>
+
+    <Button
+        android:id="@+id/claim_btn"
+        style="@style/PrimaryButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="200dp"
+        android:layout_marginTop="@dimen/dip20"
+        android:text="@string/claim"
+        android:textAllCaps="false"/></LinearLayout>
+
+</LinearLayout>

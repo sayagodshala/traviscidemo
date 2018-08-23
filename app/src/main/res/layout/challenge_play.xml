@@ -1,0 +1,797 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_new">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:id="@+id/steppers"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_below="@+id/toolbar"
+            android:background="@drawable/stepper_bg"
+            android:orientation="horizontal" />
+
+
+        <LinearLayout
+            android:id="@+id/play_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/steppers"
+            android:layout_marginTop="5dp"
+            android:background="#bdffffff"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/step_type_bg"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Poll"
+                    android:textColor="@color/app_yellow"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/countdown_timer"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/green_rounded"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="08:10"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/step_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/no_steps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="This Challenge has zero steps"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_stepnext"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="30dp"
+            android:background="#bdffffff"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/cong_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:text="Congratulation! You won"
+                android:textColor="@color/p1"
+                android:textSize="16sp" />
+
+
+            <LinearLayout
+                android:id="@+id/coins_collected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_ticks_grey" />
+
+                <TextView
+                    android:id="@+id/coins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="0 Coins"
+                    android:textColor="@color/h1"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rate This Challenge"
+                    android:textColor="@color/p1"
+                    android:textSize="13sp" />
+
+                <RatingBar
+                    android:id="@+id/rating_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_marginLeft="10dp"
+                    android:progressDrawable="@drawable/custom_rating_bar" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/facebook_share"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_facebook"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_facebook" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Share on facebook"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/twitter_share"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_twitter"
+                android:gravity="center"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_twitter" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Share on twitter"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/see_all_challenges"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:clickable="true"
+                android:text="See all challenges"
+                android:textColor="@color/p1"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_congratulations" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/thank_you_page_hldr"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/app_red"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/cong_label1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:text="Congratulation!"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/winner_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="Vinay"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/you_won"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="You Won!"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/win_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="60 Points"
+                android:textColor="@color/app_yellow"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/extra_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:text="You have successfully completed the challenge and won some amazing prize_list.       Sit Back and Enjoy!"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/like_challenge"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:background="@color/app_yellow"
+                    android:gravity="center"
+                    android:text="Like"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/share_challenge"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@color/app_yellow"
+                    android:gravity="center"
+                    android:text="Share"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/see_all_challenges1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:clickable="true"
+                android:text="Click Here To Won More Coins"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/trophy" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clickable="false"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:clickable="false"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/key_q"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onKeyClick"
+                android:text="Q"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/key_w"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onKeyClick"
+                android:text="W"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/key_e"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onKeyClick"
+                android:text="E"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/key_r"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onKeyClick"
+                android:text="R"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/key_t"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onKeyClick"
+                android:text="T"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/key_y"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onKeyClick"
+                android:text="Y"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/key_u"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onKeyClick"
+                android:text="U"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/key_i"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onKeyClick"
+                android:text="I"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/key_o"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onKeyClick"
+                android:text="O"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/key_p"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onKeyClick"
+                android:text="P"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:clickable="false"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/button_white" />
+
+            <TextView
+                android:id="@+id/key_a"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onKeyClick"
+                android:text="A"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/key_s"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onKeyClick"
+                android:text="S"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/key_d"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onKeyClick"
+                android:text="D"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/key_f"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_white"
+                android:gravity="center"
+                android:onClick="onKeyClick"
+                android:text="F"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/key_g"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onKeyClick"
+                android:text="G"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/key_h"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onKeyClick"
+                android:text="H"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/key_j"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onKeyClick"
+                android:text="J"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/key_k"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onKeyClick"
+                android:text="K"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/key_l"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onKeyClick"
+                android:text="L"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/button_white" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:clickable="false"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_white" />
+
+            <TextView
+                android:id="@+id/key_z"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onKeyClick"
+                android:text="Z"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/key_x"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onKeyClick"
+                android:text="X"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/key_c"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onKeyClick"
+                android:text="C"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/key_v"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onKeyClick"
+                android:text="V"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/key_b"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onKeyClick"
+                android:text="B"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/key_n"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onKeyClick"
+                android:text="N"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/key_m"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onKeyClick"
+                android:text="M"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_new"
+    android:orientation="vertical">
+
+    <include layout="@layout/drawer_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/address_cont"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/button_white"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_location2" />
+
+                <TextView
+                    android:id="@+id/user_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:clickable="false"
+                    android:text="@string/drawer_select_location"
+                    android:textColor="@color/grey7"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_edit_grey1"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey1"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/challenges"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:text="@string/drawer_challenges"
+                    android:textColor="@color/h1"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey1"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/offline_challenges"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:text="Offline challenges"
+                    android:textColor="@color/h1"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey1" />
+
+            <RelativeLayout
+                android:id="@+id/scan_qr"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/button_white"
+                android:clickable="true">
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/primary_color"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:textStyle="bold"
+                    android:text="@string/drawer_scan_qr"
+                    android:textColor="@color/selected_tab_color"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/scan_icon"
+                    android:clickable="false" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey1" />
+
+            <RelativeLayout
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/button_white"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:text="@string/drawer_challenges"
+                    android:textColor="@color/h1"
+                    android:textSize="14sp" />
+
+                <View
+                    android:id="@+id/category_arrow"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/button_collapse"
+                    android:clickable="false" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/category_menus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey1" />
+
+
+            <RelativeLayout
+                android:id="@+id/refer"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/button_white"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:text="@string/drawer_refer_win"
+                    android:textColor="@color/h1"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey1" />
+
+            <RelativeLayout
+                android:id="@+id/mobile_recharge"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:text="Recharge mobile"
+                    android:textColor="@color/h1"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rate1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:text="Rate us"
+                    android:textColor="@color/h1"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey1"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/button_white"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:text="@string/drawer_about_us"
+                    android:textColor="@color/h1"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey1" />
+
+
+            <RelativeLayout
+                android:id="@+id/rate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/button_white"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:text="@string/drawer_rate_us"
+                    android:textColor="@color/h1"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey1" />
+
+
+            <RelativeLayout
+                android:id="@+id/faq"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/button_white"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:text="@string/drawer_faq"
+                    android:textColor="@color/h1"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey1" />
+
+            <RelativeLayout
+                android:id="@+id/one_day_cha_t_and_c"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/button_white"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:text="@string/drawer_one_time_t_and_c"
+                    android:textColor="@color/h1"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey1" />
+
+            <RelativeLayout
+                android:id="@+id/terms"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/button_white"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:text="@string/drawer_terms"
+                    android:textColor="@color/h1"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey1" />
+
+            <RelativeLayout
+                android:id="@+id/privacy"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/button_white"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:text="@string/drawer_privacy"
+                    android:textColor="@color/h1"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey1" />
+
+            <RelativeLayout
+                android:id="@+id/daily_spin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:background="@drawable/button_white"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:text="Daily spin"
+                    android:textColor="@color/h1"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/app_version"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_white"
+                android:clickable="true"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/app_ver_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:text=""
+                    android:textColor="@color/grey7"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

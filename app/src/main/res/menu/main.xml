@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/my_account"
+        android:icon="@drawable/ic_add"
+        android:orderInCategory="1"
+        android:title="@string/res_menu_main_my_account"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/raffles"
+        android:icon="@drawable/ic_add"
+        android:visible="false"
+        android:orderInCategory="2"
+        android:title="Raffle"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/stores"
+        android:icon="@drawable/ic_add"
+        android:visible="false"
+        android:orderInCategory="3"
+        android:title="Store"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/redeem"
+        android:icon="@drawable/ic_add"
+        android:orderInCategory="4"
+        android:title="@string/res_menu_main_redeem_points"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/winners"
+        android:icon="@drawable/ic_add"
+        android:orderInCategory="5"
+        android:title="Winner's gallery"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/offline_chall"
+        android:icon="@drawable/ic_add"
+        android:orderInCategory="6"
+        android:title="@string/res_menu_main_offline_challenges" />
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_add"
+        android:orderInCategory="7"
+        android:visible="false"
+        android:title="Settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/rate_us"
+        android:icon="@drawable/ic_add"
+        android:orderInCategory="8"
+        android:visible="false"
+        android:title="Rate us"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/qr_code"
+        android:icon="@drawable/ic_add"
+        android:orderInCategory="9"
+        android:visible="false"
+        android:title="Scan QR"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_add"
+        android:orderInCategory="10"
+        android:title="@string/res_menu_main_sign_out"
+        app:showAsAction="never" />
+
+
+</menu>

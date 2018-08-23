@@ -1,0 +1,222 @@
+<!--<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--android:id="@+id/main_content"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:fitsSystemWindows="true">-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_new">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/recharge_toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/mobile_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/recharge_enter_mobile"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textColorHint="@color/edittext1"
+                    android:textSize="15sp"
+                    app:met_baseColor="@color/app_black"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@color/primary_color"
+                    app:met_singleLineEllipsis="true" />
+
+                <ImageView
+                    android:id="@+id/contacts"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignRight="@+id/mobile_number"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/contacts" />
+
+            </RelativeLayout>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/operator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="@string/recharge_select_operator"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:textColorHint="@color/edittext1"
+                android:textSize="15sp"
+                android:visibility="visible"
+                app:met_baseColor="@color/app_black"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/primary_color"
+                app:met_singleLineEllipsis="true" />
+
+            <TextView
+                android:id="@+id/label_operator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Opertaor"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/operator1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Opertaor"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/edittext1"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/circle1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Select Circle"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/edittext1"
+                android:visibility="gone" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/circle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="@string/recharge_select_circle"
+                android:inputType="text"
+                android:textColorHint="@color/edittext1"
+                android:textSize="15sp"
+                android:visibility="visible"
+                app:met_baseColor="@color/app_black"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/primary_color"
+                app:met_singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:focusable="false"
+                android:hint="@string/recharge_amount"
+                android:inputType="number"
+                android:textColorHint="@color/edittext1"
+                android:textSize="15sp"
+                android:visibility="gone"
+                app:met_baseColor="@color/app_black"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/primary_color"
+                app:met_singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/coins_for_recharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:focusable="false"
+                android:hint="@string/recharge_points"
+                android:inputType="number"
+                android:textColorHint="@color/edittext1"
+                android:textSize="15sp"
+                android:visibility="gone"
+                app:met_baseColor="@color/app_black"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/primary_color"
+                app:met_singleLineEllipsis="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/show_plans"
+        style="@style/RechargeButton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/recharge_show_plans" />
+
+    <RelativeLayout
+        android:id="@+id/recherge_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/proceed_recharge"
+            android:layout_width="150dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button_primary"
+            android:text="@string/recharge"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <Button
+
+            android:id="@+id/change_plan"
+            android:layout_width="130dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/button_primary"
+            android:text="@string/recharge_change_plan"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    <include layout="@layout/loader_layout"/>
+</RelativeLayout>

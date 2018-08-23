@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/white_rounded_new_promo_dialog"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/dialog_back_pattern"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="-55dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/spin_win_icon" />
+
+        <TextView
+            android:id="@+id/spin_points_congrats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/spin_win_dialog_congrats"
+            android:textStyle="bold"
+            android:layout_marginTop="-5dp"
+            android:textColor="#515151"
+            android:gravity="center"
+            android:textSize="18sp"/>
+
+
+        <TextView
+            android:id="@+id/spin_points_congrat_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="#7f7f7f"
+            android:text="You have won 25,000 points."
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:textSize="14sp"/>
+
+
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp">
+
+            <Button
+                android:id="@+id/spin_points_close"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="#f6f6f6"
+                android:text="@string/spin_win_dialog_close"
+                android:textAllCaps="false"
+                android:textColor="#7e8699"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button_respins"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:text="@string/spin_win_dialog_respins"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:background="@drawable/redeem_button"/>
+
+        </LinearLayout>-->
+
+
+    <LinearLayout
+        android:id="@+id/respins_hlder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp">
+        <Button
+            android:id="@+id/button_respins"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/profile_update_desc"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/redeem_button"
+            android:gravity="center"
+            android:text="@string/spin_win_dialog_respins"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/or"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="or"
+            android:textColor="#cfcfcf"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/spin_points_close"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="@string/spin_win_dialog_close"
+            android:textColor="#727272"
+            android:textSize="13sp"
+            android:background="@color/transparent"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+        <Button
+            android:id="@+id/spins_close_btn"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="#7e8699"
+            android:text="@string/spin_win_dialog_close"
+            android:textAllCaps="false"
+            android:textColor="#f6f6f6"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</RelativeLayout>

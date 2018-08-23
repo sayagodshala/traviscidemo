@@ -1,0 +1,605 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">MeraBreak</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="string_digits_person_name">qwertyuiopasdfghjklzxcvbnm QWERTYUIOPASDFGHJKLZXCVBNM\'</string>
+    <string name="string_digits_address">qwertyuiopasdfghjklzxcvbnm QWERTYUIOPASDFGHJKLZXCVBNM\'-/0123456789</string>
+    <string name="string_digits_contact_no">0123456789</string>
+    <string name="string_digits_number_decimal_comma">0123456789.,</string>
+    <string name="facebook_app_id">1682365352005674</string>
+    <string name="puzzle_size_x_y">{0} x {1}</string>
+    <string name="label_ok">OK</string>
+    <string name="label_oops">Whoops!</string>
+    <string name="label_hurray">Hurray!</string>
+    <string name="title_solved">Solved!</string>
+    <string name="title_select_tiling">Select tiling</string>
+    <string name="title_show_numbers">Show numbers</string>
+    <string name="menu_select_image">Select image</string>
+    <string name="menu_take_photo">Take photo</string>
+    <string name="menu_scramble">Shuffle</string>
+    <string name="error_could_not_load_image">Could not load image.</string>
+    <string name="error_could_not_load_image_error">Could not load image: {0}</string>
+    <string name="error_could_not_create_directory_to_store_photo">Could not create directory to store photo.</string>
+    <string name="toast_disabled_expert_mode">Turning on numbers has disabled expert mode.</string>
+    <string name="toast_not_enabled_expert_mode">Numbers are off. Expert mode will be enabled when the slidePuzzle is scrambled.</string>
+    <string name="forgot_pass">Forgot Password?</string>
+    <!--Others-->
+    <string name="categories_title">Categories</string>
+    <!--Others-->
+    <!--Common-->
+    <string name="warning">Something went wrong. Please try again.</string>
+    <string name="no_internet">No Internet! Please enable internet access.</string>
+    <string name="settings_text">Settings</string>
+    <string name="retry_text">Try Again</string>
+    <string name="points">Points</string>
+    <string name="points_small">points</string>
+    <string name="download_alert">Hey Dude, you are downloading challenge by using mobile data. Do not panic, your data charges as applicable.!</string>
+    <string name="data_enable">Please enable your mobile data in settings</string>
+    <string name="no_offline">This Challenge is not available for offline</string>
+    <string name="download_done">Challenge Downloaded</string>
+    <!--Common-->
+
+    <!--AboutUs-->
+    <string name="about_screen_name">About Us</string>
+    <string name="about_fb">Please let us know your feedback at <font fgcolor="#654597">feedback@merabreak.com</font> and we will do our best to bring more fun and more prize_list for you in near future.</string>
+    <string name="about_app_ver">App Version :</string>
+    <string name="about_text_one">Merabreak is a platform which allows you to use your breaks to participate in bite size challenges and in return win loads of prize_list and awesome deals.</string>
+    <string name="about_text_two">Whether you are travelling or at enjoying our vacation or even working you can participate and enjoy while winning points and redeeming them instantly to win some fantastic prize_list!</string>
+    <string name="about_text_three">Quiz - There are different types of quizzes including trending topics, Entertainment industry and whatever you can think of . Win points and compete with your friends to win loads of points while testing your knowledge.</string>
+    <string name="about_text_four">Jigsaw Puzzles - This is the perfect choice for lovers of JIGSAW puzzles. Every puzzle is unique, solve them and win awesome prize_list.</string>
+    <string name="about_text_five">Riddles - Do you want your brain to work so quickly? Heat up it with riddles everyday!</string>
+    <string name="about_text_six">Anagrams - It is a fun word game for puzzle lovers.In this game you will be presented with the famous words, but with the letters mixed up - anagrams. Your task is to guess the word letters in the right order, that is, to solve the anagram.</string>
+    <string name="about_text_seven">Merabreak brings a unique way of winning while you are on small breaks. Redeeming points can come from mobile recharges or participating in Raffles or redeeming your points in store front which has some exciting gifts to be redeemed.</string>
+    <string name="about_text_eight">Memory Game - It is easy to play, in which all of the images are laid face down and two images are flipped face up over each click. The object of the game is to turn over pairs of matching images.</string>
+    <!--AboutUs-->
+    <!--AccountDetails-->
+    <string name="account_details_screen_name">Account History</string>
+    <!--UserChall,IPLPointsConfig,Product,Raffle and Deal Frag-->
+    <string name="user_chal_frag_prob_three">Hey! You have not played any challenge. Play to earn points and win exciting gifts.</string>
+    <string name="user_points_frag_prob_three">Hey! There are no points at this time. Play to earn points and win exciting gifts.</string>
+    <string name="user_product_frag_prob_three">Hey! You have not bought any products. Play to earn points and buy using them.</string>
+    <string name="user_raffle_frag_prob_three">Hey! You have not bought any raffle tickets. Buy them, you will be surprised with what you can win.</string>
+    <string name="user_deal_frag_prob_three">Hey! You have not get any deals.</string>
+    <string name="valid_till">Valid Till :</string>
+    <string name="voucher_code">Voucher Code : </string>
+    <string name="voucher">Voucher</string>
+    <!--UserChall,IPLPointsConfig,Product,Raffle and Deal Frag-->
+    <!--AccountDetails-->
+    <!--ChallengeDetails-->
+    <string name="play">PLAY</string>
+    <string name="participate">PARTICIPATE</string>
+    <string name="rule">Rules:</string>
+    <string name="questions">Questions</string>
+    <string name="cha_points">Points</string>
+    <string name="time">Time</string>
+    <!--ChallengeDetails-->
+    <!--DealDialog-->
+    <string name="deal_dialog_title">You got this Deal</string>
+    <string name="deal_title">Deal Title :</string>
+    <string name="deal_code">Deal Code:</string>
+    <string name="deal_about">About Deal :</string>
+    <string name="deal_terms">Terms And Conditions :</string>
+    <string name="deal_dialog_button">Close</string>
+    <!--DealDialog-->
+    <!--ChallengesActivity-->
+    <string name="empty_challenges">Sorry, we couldn’t find any challenges for this category.</string>
+    <string name="empty_go_back">GO BACK</string>
+    <!--ChallengesActivity-->
+    <!--ChangePassword-->
+    <string name="change_pw_title">Change Password</string>
+    <string name="enter_old_password">Please enter Old Password</string>
+    <string name="enter_eight_char_pw">Password must be 8 characters long or above</string>
+    <string name="pw_not_matched">Confirm Password not matched</string>
+    <!--ChangePassword-->
+    <!--CoinsHistoryActivity-->
+    <string name="points_history_title">Point History</string>
+    <string name="points_history_empty">Your coins list is empty</string>
+    <!--CoinsHistoryActivity-->
+    <!--ChallengePlayActivity-->
+    <string name="missed_something">You seem to have missed something!</string>
+    <string name="challenge_liked">Thanks a ton! Its good you liked it.</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="win_per">Win Percentage : </string>
+    <string name="you_won">You are Awesome!</string>
+    <string name="you_won_head">You Won</string>
+    <string name="dont_wry">Don\'t Worry!</string>
+    <string name="another_chance">Don’t give up!</string><!--   Don’t worry, you can try again! -->
+    <string name="better_luck">Better luck next time!</string>
+    <string name="uh_oh">Uh Oh!</string>
+    <string name="uh_oh_failure">Uh oh! You didn\'t get 100%</string>
+    <string name="dont_worry">Keep earning points up till replays per challenge.</string>
+    <string name="live_cha_answer_received">We Have Received Your Answer</string>
+    <string name="live_cha_end">After end of this live Challenge</string>
+    <string name="live_cha_reward">Will give you rewards based on correct answers</string>
+    <string name="live_cha_thanks">Thank You..!</string>
+    <string name="offline_cha_thanks"> Thanks for playing!</string>
+    <string name="offline_cha_sync_with_internet">We have received your answers, soon points will be credited to wallet based on correct answers.</string>
+    <string name="offline_cha_sync_no_internet">We will get the answers as soon as you are reconnected to internet.</string>
+    <string name="replay">Replay</string>
+    <string name="done">Done</string>
+    <string name="time_up">Time is Up! Better luck next time.</string>
+    <string name="ok">OK</string>
+    <string name="quit_challenge">Do you want to quit playing this challenge?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="no_step_questions">This Challenge has zero steps</string>
+    <string name="congrats">Congratulations!</string>
+    <string name="congratulations">Congratulations!!</string>
+    <string name="challenge_completed">You have successfully completed the challenge and earned points. Play more challenges and redeem your points into rewards.</string>
+    <string name="right_answers">Right Answers</string>
+    <string name="win_percentage">Win Percentage</string>
+    <string name="won_points">Won Points</string>
+    <string name="got_deal">You got the deal Click Here to know</string>
+    <string name="you_can_do_better">You can do better!</string>
+    <string name="more_challenges">More Challenges</string>
+    <string name="redeem_now">Redeem Now</string>
+    <!--ChallengePlayActivity-->
+    <!--EditProfileActivity-->
+    <string name="edit_profile_title">Edit Profile</string>
+    <string name="edit_profile_enter_complete_info">Kindly enter complete information for us to know you better.</string>
+    <string name="edit_profile_enter_zipcode">Kindly enter valid zip code.</string>
+    <string name="some_thing_wrong_pic_upload">Something went wrong while updating picture</string>
+    <string name="cannot_create_image_dir">Cannot create merabreak image directory</string>
+    <string name="camera_access_title">Hey,For better experience, please give Camera access.</string>
+    <string name="camera_access_toast">To use Camera.Go to MeraBreak settings in phone->Apps-> MeraBreak-> permissions-> Give access to Camera!</string>
+    <string name="edit_full_name">Full Name</string>
+    <string name="edit_email">Email</string>
+    <string name="edit_zip">Zip Code</string>
+    <string name="edit_location">Location</string>
+    <string name="edit_dob">Date Of birth - </string>
+    <string name="edit_date">DD</string>
+    <string name="edit_month">MM</string>
+    <string name="edit_year">YYYY</string>
+    <string name="edit_gender">Gender - </string>
+    <string name="edit_gender_m">M</string>
+    <string name="edit_gender_f">F</string>
+    <string name="edit_about">About</string>
+    <string name="edit_enable_mobile_data">Use Mobile Data for Downloading Offline Challenges</string>
+    <string name="edit_submit">SAVE</string>
+    <!--EditProfileActivity-->
+    <!--ForgotPassword-->
+    <string name="fogot_pw_hide">hide</string>
+    <string name="fogot_pw_show">show</string>
+    <string name="fogot_pw_enter_otp">Please enter OTP sent on your registered mobile number.</string>
+    <string name="fogot_pw_six_char">Password needs to be atleast 6 characters long.</string>
+    <string name="new_pass">Enter New Password</string>
+    <string name="verify_otp">Verify Your OTP</string>
+    <string name="fogot_pw_otp_change_num">change number</string>
+    <string name="fogot_pw_otp_resend">resend code</string>
+    <string name="fogot_pw_otp_verify">Verify</string>
+    <string name="fogot_pw_new">new password</string>
+    <string name="fogot_pw_reset">Reset</string>
+    <!--ForgotPassword-->
+    <!--MobileVerfication-->
+    <string name="mobile_verifi_enter_valid_mobile_num">Please enter a valid mobile number.</string>
+    <string name="mobile_verifi_enter_mobile_num">Please enter Mobile Number.</string>
+    <string name="mobile_verifi_enter_six_char_pw">Password needs to be atleast 6 characters long.</string>
+    <string name="mobile_verifi_deface_sim">Hey, your sim provider is not allowed in merabreak</string>
+    <string name="mobile_verifi_perm_app_alert">Hi,For better experience, please allow this permission.Do not Panic.Your data will be safe!</string>
+    <string name="mobile_verifi_perm_toast">To use this feature.Go to Settings in phone-> Apps-> MeraBreak-> Permissions-> Give access to contacts!</string>
+    <string name="login_acc">Login to your account</string>
+    <string name="verify_mob">Verify Your Mobile</string>
+    <string name="mobile_verifi_enter_mobile">mobile number</string>
+    <string name="mobile_verifi_enter_password">password</string>
+    <string name="mobile_verifi_forgot_password">forgot password</string>
+    <string name="mobile_verifi_or">OR</string>
+    <!--MobileVerfication-->
+    <!--OfflineChallenges-->
+    <string name="offline_chall_title">Offline Challenges</string>
+    <string name="offline_chall_no_internet_retry">No Internet! Please enable internet access. Tap here to Retry.</string>
+    <string name="offline_chall_empty">You haven’t downloaded any challenges to be played offline. Save challenges on the app so that you can still play them when offline with no internet!</string>
+    <!--OfflineChallenges-->
+    <!--OtpVerification-->
+    <string name="otp_verif_enter_otp">Please enter OTP sent on your registered mobile number.</string>
+    <!--OtpVerification-->
+    <!--Privacy-->
+    <string name="privacy_title">Privacy Policy</string>
+    <!--Privacy-->
+    <!--FAQ-->
+    <string name="faq_title">FAQs</string>
+    <!--FAQ-->
+    <!--Winners-->
+    <string name="winners_title">Winners Gallery</string>
+    <!--Winners-->
+    <!--Profile-->
+    <string name="profile_not_merabreak_user">Hey! You do not seem to be a part of the Merabreak Family.</string>
+    <string name="profile_total">Total </string>
+    <string name="profile_challenges">Challenges</string>
+    <string name="profile_points">Points Won</string>
+    <string name="profile_refferals">Refferals</string>
+    <string name="profile_raffels">Raffles</string>
+    <string name="profile_account_text">Account History</string>
+    <string name="profile_about_text">About</string>
+    <string name="profile_account_more">View More</string>
+    <string name="profile_total_points">Total Points</string>
+    <string name="profile_total_challenges">Total Challenges</string>
+    <string name="profile_total_raffels">Total Raffles</string>
+    <string name="profile_total_orders">Total Orders</string>
+    <string name="profile_total_deals">Total Deals</string>
+    <string name="profile_mobile_text">Mobile</string>
+    <string name="profile_email_text">Email</string>
+    <string name="profile_dob_text">Date of Birth</string>
+    <string name="profile_gender_text">Gender</string>
+    <string name="profile_location_text">Location</string>
+    <string name="profile_zip_text">Zip Code</string>
+    <string name="profile_city_text">City</string>
+    <!--Profile-->
+    <!--QRCode-->
+    <string name="qr_code_scan">SCAN</string>
+    <!--QRCode-->
+    <!--RaffleActivity-->
+    <string name="raffle_empty">No raffles found. See ya later.</string>
+    <string name="raffle_points"> Points</string>
+    <string name="raffle_days_left"> days left to Buy</string>
+    <string name="raffle_not_sign_up">Hey! being a member brings loads of fun. Become one today.</string>
+    <string name="raffle_no_quantity">Please select quantity to proceed..!</string>
+    <string name="raffle_price">Price per ticket : </string>
+    <string name="raffle_total_left">Total Tickets Left : </string>
+    <string name="raffle_end_time">Raffle ends in : </string>
+    <string name="total_tickets_purchased_by_user">Total tickets purchased by you : </string>
+    <string name="total_tickets_purchased_overall">Total tickets purchased : </string>
+    <string name="how_many_tickets">Select quantity of tickets : </string>
+    <string name="raffle_brand">Brand : </string>
+    <string name="raffle_desc">Description : </string>
+    <string name="raffle_specs">Specifications : </string>
+    <string name="raffle_terms"><u>Terms And Conditions</u></string>
+    <string name="raffle_purchase">BUY NOW</string>
+    <!--RaffleActivity-->
+    <!--RafflesActivity-->
+    <string name="raffles_title">Raffles</string>
+    <string name="raffles_sry_msg">Sorry, we could not find any Raffles</string>
+    <string name="raffles_go_back">GO BACK</string>
+    <!--RafflesActivity-->
+    <!--RechargeActivity-->
+    <string name="recharge_title">Recharge</string>
+    <string name="recharge_perm_app_alert">Hey,For better experience, please give device contacts access.Do not Panic.Your data will be safe!</string>
+    <string name="recharge_perm_toast">To use this feature.Go to Settings in phone-> Apps-> MeraBreak-> Permissions-> Give access to contacts!</string>
+    <string name="recharge_no_mobile">You seem to have missed the mobile number.</string>
+    <string name="recharge_mobile_not_valid">Mobile number you provided is invalid.</string>
+    <string name="recharge_no_operator">Please select your mobile operator.</string>
+    <string name="recharge_no_circle">Please select your mobile circle.</string>
+    <string name="recharge_enter_mobile">Mobile Number</string>
+    <string name="recharge_select_operator">Select Operator</string>
+    <string name="recharge_select_circle">Select Circle</string>
+    <string name="recharge_amount">Amount</string>
+    <string name="recharge_points">Points</string>
+    <string name="recharge_show_plans">Show Plans</string>
+    <string name="recharge">Recharge</string>
+    <string name="recharge_change_plan">Change Plan</string>
+    <!--RechargeActivity-->
+    <!--RechargeDetailsActivity-->
+    <string name="recharge_details_title">Recharge Plans</string>
+    <!--RechargeDetailsActivity-->
+    <!--GaneshaSpeaksActivity-->
+    <string name="ganesha_speaks_title">Astrology</string>
+    <!--GaneshaSpeaksActivity-->
+    <!--RedeemPointsActivity-->
+    <string name="redeem_points_title">Redeem Your Points</string>
+    <string name="redeem_not_signin">Hey! You do not seem to be signed in. Kindly sign in.</string>
+    <string name="redeem_points_below">Redeem Points</string>
+    <string name="redeem_points_recharge">Mobile Recharge</string>
+    <string name="redeem_points_store">Store</string>
+    <string name="redeem_points_raffle">Raffle</string>
+    <string name="redeem_items">Items</string>
+    <!--RedeemPointsActivity-->
+    <!--ReferalContactsActivity-->
+    <string name="referal_contacts_title">Your People</string>
+    <string name="referal_select_contact">Please select atleast one people</string>
+    <string name="referal_contacts_search">Search Contact</string>
+    <string name="referal_contacts_select_send">Select And Send</string>
+    <!--ReferalContactsActivity-->
+    <!--RefferAndWinActivity-->
+    <string name="refer_win_title">Refer and Earn Points</string>
+    <string name="refer_win_text">The more the merrier! Get extra points on the app for referring friends and family to the app</string>
+    <string name="refer_people">Refer Your Contacts</string>
+    <string name="refer_or">OR</string>
+    <string name="refer_share">Invite Your Friends</string>
+    <string name="refer_skip">Skip</string>
+    <!--RefferAndWinActivity-->
+    <!--RegistraioActivityNew-->
+    <string name="regitration_enter_name">Please enter Full Name</string>
+    <string name="regitration_enter_valid_email">Please enter a valid email address</string>
+    <string name="regitration_enter_valid_mobile">Please enter a valid mobile number</string>
+    <string name="regitration_enter_password">Password needs to be atleast 6 characters long</string>
+    <string name="regitration_enter_otp">Please enter OTP sent on your registered mobile number</string>
+    <string name="verify_otp_fb">Verify OTP For Facebook Sign Up</string>
+    <string name="reg_details">Register Your Details</string>
+    <string name="regitration_skip">Want to miss the experience ? Please signup to continue or continue to be a guest</string>
+    <string name="regitration_hint_name">full name</string>
+    <string name="regitration_hint_mobile">mobile number</string>
+    <string name="regitration_hint_email">email</string>
+    <string name="regitration_hint_pw">password</string>
+    <string name="regitration_otp_change_number">change number</string>
+    <!--RegistraioActivityNew-->
+    <!--SearchLocationActivity-->
+    <string name="search_location_title">Select Location</string>
+    <string name="search_location_use_currennt_loc">Use My Location</string>
+    <string name="search_location_generic_words">Please try some more generic words!</string>
+    <string name="search_location_no_result">No results found</string>
+    <string name="search_location_select_city">Select City :</string>
+    <string name="search_location_location_msg1">Location is Disabled</string>
+    <string name="search_location_location_msg2">Please enable Location Services from Settings</string>
+    <string name="search_location_location_msg3">App > Privacy > Location Services</string>
+    <!--SearchLocationActivity-->
+    <!--SettingsActivity-->
+    <string name="settings_title">Settings</string>
+    <string name="settings_enable_mobile_data">Use Mobile Data for Downloading Offline Challenges</string>
+    <string name="settings_mobile">Mobile No</string>
+    <string name="settings_email">Email Id</string>
+    <!--SettingsActivity-->
+    <!--SpinWheel/SpinWinDialog-->
+    <string name="spin_win_dialog_congrats">Congratulations!</string>
+    <string name="notification">Notification</string>
+    <string name="notifications">Notifications</string>
+    <string name="no_notification">No new notification</string>
+    <string name="no_notification_subtitle">Stay tuned for exciting contests, cool products \n&amp; amazing raffles.</string>
+    <string name="spin_win_dialog_points_text"> points</string>
+    <string name="spin_win_dialog_won_text">You have won</string>
+    <string name="spin_win_dialog_close">Close</string>
+    <string name="spin_win_dialog_respins">Re-Spin</string>
+    <!--SpinWheel/SpinWinDialog-->
+    <!--SplashActivity-->
+    <string name="splash_perm_alert">Hey ,For better experience,please give access to location,camera,storage,contacts and SMS access.Do not Panic.Your data will be safe!</string>
+    <!--SplashActivity-->
+    <!--StoreActivity-->
+    <string name="store_no_products">No products found. See ya later</string>
+    <string name="store_product_points"> Points</string>
+    <string name="store_product_shipping">Free Shipping</string>
+    <string name="store_user_not_reg">Hey! being a member brings loads of fun. Become one today</string>
+    <string name="store_product_price">Price : </string>
+    <string name="store_product_brand">Brand : </string>
+    <string name="store_product_desc">Description : </string>
+    <string name="store_product_specs">Specifications : </string>
+    <string name="store_product_purchase">BUY NOW</string>
+    <!--StoreActivity-->
+    <!--StoresActivity-->
+    <string name="stores_title">Store</string>
+    <string name="stores_no_products">Sorry, we couldn\'t find any Products</string>
+    <string name="stores_go_back">GO BACK</string>
+    <!--StoresActivity-->
+    <!--SuperPoints/ProPointsDialog-->
+    <string name="pro_points_congrats">Congratulations!</string>
+    <string name="pro_points_won_text">You have won </string>
+    <string name="pro_points_won_text_extra"> super points.What are you waiting for.Go and redeem it</string>
+    <string name="pro_points_redeem">Redeem</string>
+    <string name="pro_points_skip">Skip</string>
+    <!--SuperPoints/ProPointsDialog-->
+    <!--TermsActivity-->
+    <string name="terms_title">Terms And Conditions</string>
+    <!--TermsActivity-->
+    <!--OnetimeTermsActivity-->
+    <string name="rules_title">Contest - Rules and T&amp;C\'s</string>
+    <!--OnetimeTermsActivity-->
+    <!--WelcomeActivity-->
+    <string name="welcome_start">Start</string>
+    <string name="welcome_next">Next</string>
+    <string name="welcome_skip">Skip</string>
+    <string name="welcome_slide_one_title">Feature Challenge</string>
+    <string name="welcome_slide_one_text">Get hooked onto fun trivia, challenging quizzes and snack-able content on MeraBreak</string>
+    <string name="welcome_slide_two_title">Play Multiple Challenges</string>
+    <string name="welcome_slide_two_text">Play challenges like Anagrams, Image Quizzes, Jigsaws, Match the Images, Quizzes &amp; Riddles.</string>
+    <string name="welcome_slide_three_title">Make Your free time Profitable!</string>
+    <string name="welcome_slide_three_text">Redeem the points that you earn on the app against Mobile Recharges, Shopping Vouchers, and exclusive discounts.</string>
+    <string name="welcome_slide_four_title">Recharge Plans</string>
+    <string name="welcome_slide_four_text">Get more talk time with your free time on the app! Save money on your prepaid and postpaid plans</string>
+    <string name="welcome_slide_five_title">Raffles</string>
+    <string name="welcome_slide_five_text">Qualify for raffles. Get lucky and stand a chance to win big prize_list.</string>
+    <string name="welcome_slide_six_title">Store</string>
+    <string name="welcome_slide_six_text">Redeem your points at the MeraBreak store to explore a variety of products to choose from</string>
+    <!--WelcomeActivity-->
+    <!--ChallengeRecyviewAdpater-->
+    <string name="challenge_adapter_using_data">We are using your mobile data to download challenges. Kindly enable Wifi if available</string>
+    <string name="challenge_adapter_no_internet">Oh oh! You lost Internet ! We will wait for you to resume internet</string>
+    <string name="challenge_adapter_download">Download</string>
+    <string name="challenge_adapter_downloaded">Downloaded</string>
+    <string name="challenge_adapter_downloading">Downloading</string>
+    <string name="challenge_adapter_challenge">Challenge</string>
+    <string name="challenge_adapter_already_downloaded">Already Downloaded</string>
+    <string name="challenge_adapter_cannot_play_offline">This Challenge can not be played offline</string>
+    <string name="challenge_adapter_download_completed">Download Completed</string>
+    <!--ChallengeRecyviewAdpater-->
+    <!--HistoryRaffleRecyviewAdpater-->
+    <string name="history_raffle_buy">Buy Now</string>
+    <string name="history_raffle_days">days</string>
+    <!--HistoryRaffleRecyviewAdpater-->
+    <!--MobileRechargeRecyviewAdpater-->
+    <string name="recharge_plan_add">Add</string>
+    <!--MobileRechargeRecyviewAdpater-->
+    <!--ItemStep-->
+    <string name="item_step_enter">Enter</string>
+    <string name="item_step_answer">Answer</string>
+    <string name="item_step_no_chances">No Chances</string>
+    <string name="item_step_image_not_found">Image Not found</string>
+    <string name="item_step_video_not_found">Video Not found</string>
+    <string name="item_step_error_load_video">Error while loading videos</string>
+    <string name="item_step_no_options">No Options Available</string>
+    <!--ItemStep-->
+    <!--ChallengesDrawerFrag-->
+    <string name="challenge_drawer_no_categories">No Categories.Go Back..!</string>
+    <!--ChallengesDrawerFrag-->
+    <!--DrawerFragment-->
+    <string name="drawer_select_location">Select Location</string>
+    <string name="drawer_challenges">Challenges</string>
+    <string name="drawer_scan_qr">Scan to Play</string>
+    <string name="drawer_refer_win">Refer and Earn Points</string>
+    <string name="drawer_about_us">About Us</string>
+    <string name="drawer_one_time_t_and_c">Contest - Rules and T&amp;C\'s</string>
+    <string name="drawer_terms">Terms and Conditions</string>
+    <string name="drawer_privacy">Privacy Policy</string>
+    <string name="drawer_rate_us">Rate Us</string>
+    <string name="drawer_faq">FAQs</string>
+    <string name="drawer_sign_up_text">Sign up now to \nstart earning points</string>
+    <string name="drawer_sign_up">SIGN UP</string>
+    <!--DrawerFragment-->
+    <!--EnterTainmentFragment-->
+    <string name="tab_fragment_offline">Play Offline Challenges</string>
+    <!--EnterTainmentFragment-->
+    <!--RechargePlansFragment-->
+    <string name="recharge_plans_frag_recharge_limit">Sorry! We can only process Rs.10/- and Above transactions only..!</string>
+    <string name="recharge_plans_frag_no_plans">Sorry No Plans Available</string>
+    <!--RechargePlansFragment-->
+    <!--BaseActivityForYoutube-->
+    <string name="base_youtube_no_internet">No Internet Found, Seems like you are offline at the moment.</string>
+    <string name="base_youtube_settings">Settings</string>
+    <!--BaseActivityForYoutube-->
+    <!--CircleAndOperatorDialog-->
+    <string name="circle_dialog_title">Select Circle</string>
+    <string name="operator_dialog_title">Select Operator</string>
+    <!--CircleAndOperatorDialog-->
+    <!--MainActivity-->
+    <string name="main_activity_exit_app">Exit MeraBreak? Are you sure?</string>
+    <string name="main_activity_play_not_found">Play service not found</string>
+    <string name="main_activity_logout">Hey! We will miss you. Do you want to close now ?</string>
+    <string name="main_activity_still_no_internet">Still not connected to Internet.Please connect and Try Again..!</string>
+    <string name="main_activity_home">home</string>
+    <string name="main_activity_astrology">astrology</string>
+    <string name="main_activity_auto">auto</string>
+    <string name="main_activity_f_f">nature</string>
+    <string name="main_activity_tech">tech</string>
+    <string name="main_activity_fitness">fitness</string>
+    <string name="main_activity_entertainment">entertainment</string>
+    <string name="main_activity_people">people</string>
+    <string name="main_activity_travel">travel</string>
+    <string name="main_activity_fashion">fashion</string>
+    <string name="main_activity_food">food</string>
+    <string name="main_activity_sports">sports</string>
+    <string name="gs_daily">daily</string>
+    <string name="gs_weekly">weekly</string>
+    <string name="gs_monthly">monthly</string>
+    <string name="main_activity_spin_now">You can spin now!</string>
+    <string name="main_activity_no_internet">No Internet! Please connect and  </string>
+    <string name="main_activity_tap_here">  Tap Here</string>
+    <string name="main_wallet_title">Wallet</string>
+    <string name="main_wallet_points">Points</string>
+    <string name="main_wallet_super_points">Super Points</string>
+    <string name="main_wallet_note">Super points have redeeming limits.</string>
+    <string name="main_wallet_redeem">Redeem</string>
+    <string name="main_spin_wait_title">Next spin available in</string>
+    <string name="main_spin_wait_close">Close</string>
+    <!--MainActivity-->
+    <!--res/menu/main-->
+    <string name="res_menu_main_my_account">My account</string>
+    <string name="res_menu_main_redeem_points">Redeem points</string>
+    <string name="res_menu_main_offline_challenges">Offline challenges</string>
+    <string name="res_menu_main_sign_out">Sign out</string>
+    <!--res/menu/main-->
+    <!--res/menu/options_menu-->
+    <string name="options_menu_download">Download</string>
+    <string name="options_menu_share">Share</string>
+    <!--res/menu/options_menu-->
+    <!--res/actvity_scan-->
+    <string name="scan_text1">Scan To Play</string>
+    <string name="scan_text2">Scan here &amp; directly play the challenge</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts."
+
+         "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts."
+
+    </string>
+    <!--res/actvity_scan-->
+    <string name="hint_ask"><i>Ask me anything...</i></string>
+    <string name="total_points">Total Points :<xliff:g name="time"> %d</xliff:g></string>
+
+    <string name="article_activity_exit_article">Do you want to stop reading ?</string>
+
+    <!--MCL-->
+    <!--StandingsInfo-->
+    <string name="standing_info_title">Team standings</string>
+    <string name="standing_info_desc">Get an overview of the team standings for the current T20 season.\nM - Matches Played\nW - Matches Won\nL - Matches Lost\nN/R - No Result\nNRR - Net Run Rate\nPts - Points</string>
+    <!--StandingsInfo-->
+    <!--StatsInfo-->
+    <string name="stats_info_title">Points at a glance</string>
+    <string name="stats_info_desc">Get an overview on the summary of points earned according to the team selection.</string>
+    <!--StatsInfo-->
+    <!--LeaderBoardInfo-->
+    <string name="leader_board_info_title">Exciting prize_list!</string>
+    <string name="leader_board_info_desc">Did you see your name on the list yet?\n Here’s a tip - Answer questions correctly to earn bonus points during the match breaks &amp; check if you can score a couple of centuries or more! </string>
+    <!--LeaderBoardInfo-->
+    <!--HomeInfoWithoutSquad-->
+    <string name="home_without_squad_info_title">Share your opinion</string>
+    <string name="home_without_squad_info_desc">Match your opinion with daily polls and check how well your opinion matches with others.</string>
+    <!--HomeInfoWithoutSquad-->
+    <!--HomeInfoWithSquad-->
+    <string name="home_with_squad_info_title">Total points</string>
+    <string name="home_with_squad_info_desc">Earn points based on the performance of your home team &amp; favourite team of the day. Check ‘How to Play’ to understand the points system.</string>
+    <!--HomeInfoWithSquad-->
+    <!--LeaderBoardPrizes-->
+    <string name="lb_prizes_info_title">Prizes..!</string>
+    <string name="lb_prizes_info_desc">1st Prize : VIVO V9\n2nd Prize : Redmi 5\n3rd Prize : Rs. 5000 Gift Voucher\n7 Gift Vouchers worth Rs.1000\n40 Gift Vouchers worth Rs.200.</string>
+    <!--LeaderBoardPrizes-->
+
+    <string name="gp_banner_text">"What does <b><font color='#ec1c24'>GaneshaSpeaks</font></b> predict about the match today?"</string>
+
+    <!--UPDATE PROFILE-->
+    <string name="update">Update</string>
+    <string name="update_your_profile">Update Your Profile!</string>
+    <string name="earn_points_on_profile_update_str">Earn extra points by completing your profile.</string>
+    <string name="title_for_update_dob">You were born on...</string>
+    <string name="title_for_update_gender">Are you a...</string>
+    <string name="title_for_update_location">You are at...</string>
+    <!--UPDATE PROFILE-->
+
+
+    <!-- Raffle Challenges -->
+
+    <string name="raffle_challenge">Raffle Challenge</string>
+    <string name="on_raffle_success">You have been successfully subscribed to the raffle! Play more challenges and redeem your points into rewards.</string>
+    <string name="on_raffle_unsuccess">Play more challenges and redeem your points into rewards.</string>
+    <string name="tough_luck">Tough Luck!</string>
+    <string name="can_do_better">Can do better!</string>
+    <string name="almost_there">Almost there!</string>
+    <string name="one_step_closer">One step closer!</string>
+    <string name="genius">Genius!</string>
+    <string name="you_are_eligible">You are now eligible for&#160;</string>
+    <string name="already_played">You\'ve already played</string>
+    <string name="buy_now">BUY NOW</string>
+    <string name="get_now">GET NOW</string>
+
+    <!-- Contest -->
+    <string name="claim">Claim</string>
+    <string name="contest">Contest</string>
+    <string name="contests">Contest(s)</string>
+    <string name="vouchers">Voucher(s)</string>
+    <string name="redeem_history">Redeem History</string>
+    <string name="okay">Okay</string>
+    <string name="applicable_for_txt">This voucher is applicable for&#160;</string>
+    <string name="only">&#160;only</string>
+    <string name="users">&#160;users</string>
+    <string name="voucher_left">Voucher Left:&#160;</string>
+    <string name="stand_a_chance_title">Stand a chance to WIN!</string>
+    <string name="next_in_caps">NEXT</string>
+    <string name="i_agree">I AGREE</string>
+    <string name="raffle_tickets">&#160;raffle ticket(s)</string>
+    <string name="product_tickets">&#160;product(s)</string>
+
+    <string name="raffle_voucher_title">Raffle(s)</string>
+    <string name="store_voucher_title">Store(s)</string>
+    <string name="title_terms_and_condition">Terms and Condition</string>
+
+
+
+</resources>

@@ -2,6 +2,7 @@ language: android
 sudo: false
 jdk: oraclejdk8
 before_install:
+- chmod +x gradlew
 - mkdir "$ANDROID_HOME/licenses" || true
 - yes | sdkmanager "platforms;android-25"
 android:
@@ -21,7 +22,7 @@ notifications:
 env:
 - GRADLE_OPTS="-Xmx2048M -XX:MaxPermSize=2048m"
 script:
-- "chmod +x ./gradlew build"
+- "./gradlew build"
 cache:
   directories:
   - "$HOME/.gradle"

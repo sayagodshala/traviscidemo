@@ -93,7 +93,7 @@
       <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
+            <state relative-caret-position="450">
               <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
             </state>
           </provider>
@@ -6504,7 +6504,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/sayagodshala/Desktop/android_studio_projects/Merabreak-Android/app/build.gradle" />
+    <property name="SearchEverywhereHistoryKey" value="git&#9;FILE&#9;file:///Users/sayagodshala/Desktop/android_studio_projects/Merabreak-Android/app/.gitignore" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
@@ -6703,7 +6703,7 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
-      <window_info id="Build Variants" order="2" sideWeight="0.5048544" side_tool="true" visible="true" weight="0.24964234" />
+      <window_info id="Build Variants" order="2" sideWeight="0.5018182" side_tool="true" visible="true" weight="0.24964234" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Flutter Outline" order="3" />
       <window_info anchor="bottom" id="Logcat" order="7" />
@@ -6720,9 +6720,9 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32969698" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32969698" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.62545455" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.62545455" />
       <window_info id="Captures" order="2" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49514562" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49818182" visible="true" weight="0.24964234" />
       <window_info anchor="right" id="Android WiFi ADB" order="3" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.3297568" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -6925,7 +6925,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
+        <state relative-caret-position="450">
           <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
         </state>
       </provider>

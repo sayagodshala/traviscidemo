@@ -28,7 +28,7 @@ branches:
     - master
     - /dev/.*/
 script:
-- ./gradlew clean test build
+- ./gradlew build --stacktrace
 cache:
   directories:
   - $HOME/.gradle/caches/

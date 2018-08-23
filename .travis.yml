@@ -21,8 +21,7 @@ notifications:
   email: false
 env:
 - GRADLE_OPTS="-Xmx2048M -XX:MaxPermSize=2048m"
-script:
-- "./gradlew developmentDebug"
+script: ./gradlew developmentDebug
 cache:
   directories:
   - "$HOME/.gradle"

@@ -21,7 +21,7 @@ notifications:
 env:
 - GRADLE_OPTS="-Xmx2048M -XX:MaxPermSize=2048m"
 script:
-- "./gradlew build"
+- "chmod +x ./gradlew build"
 cache:
   directories:
   - "$HOME/.gradle"
